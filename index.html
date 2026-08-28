@@ -1,1091 +1,4077 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
-<title>Shree Himal Group Byawasaya Udhyog | Construction & Infrastructure, Rupandehi, Nepal</title>
-<meta name="description" content="Shree Himal Group Byawasaya Udhyog is a Nepal-based construction and infrastructure company undertaking road, bridge, drainage, culvert, housing and local infrastructure development works in Rupandehi, Nepal.">
-<meta name="keywords" content="Shree Himal Group, Byawasaya Udhyog, construction Nepal, infrastructure Rupandehi, road construction, bridge construction, Sainamaina">
-<meta name="theme-color" content="#2C0A3E">
-<meta property="og:title" content="Shree Himal Group Byawasaya Udhyog">
-<meta property="og:description" content="Construction and infrastructure development company based in Sainamaina-03, Murgiya, Rupandehi, Nepal.">
-<meta property="og:type" content="website">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-<style>
-:root{
-  --brinjal:#2C0A3E;
-  --purple:#4B1868;
-  --violet:#6B2A94;
-  --orange:#E85D04;
-  --orange-soft:#FF8A3D;
-  --ink:#1B0F24;
-  --body-muted:#5F5468;
-  --bg-page:#FDFBFE;
-  --bg-alt:#F4F0F7;
-  --white:#FFFFFF;
-  --line:rgba(27,15,36,0.11);
-  --line-soft:rgba(27,15,36,0.07);
-  --dark-muted:#C8BBD4;
-  --shadow:0 16px 40px rgba(43,10,62,0.08);
-  --shadow-lg:0 30px 70px rgba(43,10,62,0.14);
-  --ease:cubic-bezier(.16,.84,.44,1);
-}
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
-html{scroll-behavior:smooth;}
-body{
-  font-family:'Inter',sans-serif;
-  background:var(--bg-page);
-  color:var(--ink);
-  overflow-x:hidden;
-  line-height:1.65;
-  -webkit-font-smoothing:antialiased;
-}
-h1,h2,h3,h4{font-family:'Manrope',sans-serif;font-weight:800;letter-spacing:-0.02em;color:var(--ink);line-height:1.15;}
-img{max-width:100%;display:block;}
-a{color:inherit;text-decoration:none;}
-button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit;}
-input,textarea{font-family:inherit;}
-ul{list-style:none;}
-.container{width:min(1240px,92%);margin:0 auto;}
-section{position:relative;}
-:focus-visible{outline:2px solid var(--orange);outline-offset:3px;}
-.on-dark{color:var(--white);}
+  <meta charset="UTF-8">
 
-/* ===== Utility backgrounds ===== */
-.grain{position:absolute;inset:0;pointer-events:none;opacity:0.03;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");mix-blend-mode:overlay;}
-.grid-lines{position:absolute;inset:0;pointer-events:none;background-image:linear-gradient(var(--line-soft) 1px,transparent 1px),linear-gradient(90deg,var(--line-soft) 1px,transparent 1px);background-size:64px 64px;opacity:0.6;mask-image:radial-gradient(ellipse 80% 60% at 50% 0%,#000 40%,transparent 100%);}
-.grid-lines.dark-grid{background-image:linear-gradient(rgba(255,255,255,0.06) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,0.06) 1px,transparent 1px);}
-.glow-orb{position:absolute;border-radius:50%;filter:blur(90px);pointer-events:none;}
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-/* ===== Loader ===== */
-#loader{position:fixed;inset:0;background:var(--brinjal);z-index:9999;display:flex;align-items:center;justify-content:center;transition:opacity .7s var(--ease),visibility .7s var(--ease);}
-#loader.hide{opacity:0;visibility:hidden;}
-.loader-mark{font-family:'Manrope',sans-serif;font-weight:800;font-size:14px;letter-spacing:0.35em;color:var(--white);display:flex;flex-direction:column;align-items:center;gap:18px;}
-.loader-bar{width:180px;height:2px;background:rgba(255,255,255,0.14);position:relative;overflow:hidden;border-radius:2px;}
-.loader-bar::after{content:'';position:absolute;left:-40%;top:0;height:100%;width:40%;background:linear-gradient(90deg,var(--violet),var(--orange));animation:loaderMove 1.1s ease-in-out infinite;}
-@keyframes loaderMove{0%{left:-40%;}50%{left:60%;}100%{left:100%;}}
+  <title>Shree Himal Group | Construction & Infrastructure | Rupandehi, Nepal</title>
 
-/* ===== Scroll progress ===== */
-#scroll-progress{position:fixed;top:0;left:0;height:3px;width:0%;background:linear-gradient(90deg,var(--violet),var(--orange));z-index:2100;transition:width .1s linear;}
+  <meta name="description" content="Shree Himal Group is a registered business operating in Murgiya, Sainamaina-04, Rupandehi, providing construction, infrastructure, material supply and equipment accessory support.">
 
-/* ===== Header ===== */
-header{position:fixed;top:0;left:0;width:100%;z-index:1000;padding:24px 0;transition:padding .4s var(--ease),background .4s var(--ease),box-shadow .4s var(--ease),border-color .4s ease;border-bottom:1px solid transparent;}
-header.scrolled{padding:14px 0;background:rgba(253,251,254,0.86);backdrop-filter:blur(18px) saturate(140%);box-shadow:0 8px 30px rgba(43,10,62,0.08);border-bottom:1px solid var(--line);}
-.nav-wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;}
-.brand{display:flex;flex-direction:column;line-height:1.15;}
-.brand-main{font-family:'Manrope',sans-serif;font-weight:800;font-size:16px;letter-spacing:0.04em;color:var(--white);transition:color .4s ease;}
-.brand-sub{font-family:'Manrope',sans-serif;font-weight:600;font-size:10.5px;letter-spacing:0.26em;color:var(--orange-soft);margin-top:2px;transition:color .4s ease;}
-header.scrolled .brand-main{color:var(--ink);}
-header.scrolled .brand-sub{color:var(--orange);}
-nav.primary-nav ul{display:flex;gap:4px;align-items:center;}
-nav.primary-nav a{position:relative;font-size:13px;font-weight:600;letter-spacing:0.02em;color:rgba(255,255,255,0.78);padding:10px 15px;border-radius:30px;transition:color .3s ease,background .3s ease;display:inline-block;}
-header.scrolled nav.primary-nav a{color:var(--body-muted);}
-nav.primary-nav a:hover{color:var(--white);}
-header.scrolled nav.primary-nav a:hover{color:var(--ink);}
-nav.primary-nav a.active{color:var(--white);}
-header.scrolled nav.primary-nav a.active{color:var(--ink);}
-nav.primary-nav a.active::after{content:'';position:absolute;left:15px;right:15px;bottom:4px;height:2px;background:linear-gradient(90deg,var(--violet),var(--orange));border-radius:2px;}
-.nav-cta{display:flex;align-items:center;gap:14px;}
-.nav-cta .btn-outline{border-color:rgba(255,255,255,0.35);color:var(--white);background:rgba(255,255,255,0.06);}
-header.scrolled .nav-cta .btn-outline{border-color:var(--line);color:var(--ink);background:var(--bg-alt);}
-.hamburger{display:none;width:44px;height:44px;align-items:center;justify-content:center;border-radius:12px;background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.2);position:relative;z-index:1200;transition:background .3s ease,border-color .3s ease;}
-header.scrolled .hamburger{background:var(--bg-alt);border-color:var(--line);}
-.hamburger span{display:block;width:20px;height:2px;background:var(--white);position:relative;transition:all .3s ease;}
-header.scrolled .hamburger span{background:var(--ink);}
-header.scrolled .hamburger span::before,header.scrolled .hamburger span::after{background:var(--ink);}
-.hamburger span::before,.hamburger span::after{content:'';position:absolute;left:0;width:20px;height:2px;background:var(--white);transition:all .3s ease;}
-.hamburger span::before{top:-6px;}
-.hamburger span::after{top:6px;}
-.hamburger.open span{background:transparent;}
-.hamburger.open span::before{top:0;transform:rotate(45deg);}
-.hamburger.open span::after{top:0;transform:rotate(-45deg);}
+  <meta name="keywords" content="Shree Himal Group, Construction Nepal, Murgiya construction, Sainamaina construction, Rupandehi construction, Arghakhanchi business, Road construction, Bridge construction, Building construction, Nala construction, Gitti Baluwa Mixcut, Excavator accessories, Tipper accessories, Dozer accessories">
 
-/* ===== Buttons ===== */
-.btn{position:relative;display:inline-flex;align-items:center;gap:10px;padding:15px 30px;border-radius:10px;font-size:13px;font-weight:700;letter-spacing:0.04em;text-transform:uppercase;overflow:hidden;transition:transform .35s var(--ease),box-shadow .35s var(--ease);isolation:isolate;min-height:44px;}
-.btn-primary{background:linear-gradient(120deg,var(--violet),var(--orange));color:var(--white);box-shadow:0 10px 26px rgba(232,93,4,0.22);}
-.btn-primary:hover{transform:translateY(-3px);box-shadow:0 16px 34px rgba(232,93,4,0.32);}
-.btn-primary i{transition:transform .35s var(--ease);}
-.btn-primary:hover i{transform:translateX(4px);}
-.btn-outline{border:1px solid var(--line);color:var(--ink);background:var(--white);}
-.btn-outline:hover{border-color:var(--orange);color:var(--orange);transform:translateY(-3px);}
-.btn-block{width:100%;justify-content:center;}
+  <meta name="author" content="Shree Himal Group">
 
-/* ===== Hero (kept dark & cinematic; only visual anchor of the page) ===== */
-#hero{min-height:100vh;display:flex;align-items:center;position:relative;overflow:hidden;padding-top:120px;padding-bottom:80px;background:var(--brinjal);}
-.hero-bg{position:absolute;inset:0;z-index:0;}
-.hero-bg img{width:100%;height:100%;object-fit:cover;transform:scale(1.08);opacity:0.55;}
-.hero-bg::after{content:'';position:absolute;inset:0;background:
-  linear-gradient(115deg,rgba(44,10,62,0.96) 0%,rgba(44,10,62,0.86) 40%,rgba(75,24,104,0.7) 70%,rgba(232,93,4,0.22) 100%);
-}
-.hero-bg .fallback{position:absolute;inset:0;background:linear-gradient(135deg,var(--brinjal),var(--purple) 60%,var(--violet));}
-.hero-particles{position:absolute;inset:0;z-index:1;pointer-events:none;}
-.hero-particles span{position:absolute;width:3px;height:3px;border-radius:50%;background:var(--orange-soft);opacity:0.4;animation:floatParticle linear infinite;}
-@keyframes floatParticle{0%{transform:translateY(0) translateX(0);opacity:0;}10%{opacity:.5;}90%{opacity:.3;}100%{transform:translateY(-120vh) translateX(30px);opacity:0;}}
-.hero-content{position:relative;z-index:3;max-width:820px;}
-.hero-label{display:inline-flex;align-items:center;gap:10px;font-size:12px;font-weight:700;letter-spacing:0.26em;text-transform:uppercase;color:var(--orange-soft);padding:9px 18px;border:1px solid rgba(255,138,61,0.35);border-radius:30px;background:rgba(232,93,4,0.1);margin-bottom:28px;opacity:0;animation:revealUp .9s var(--ease) .2s forwards;}
-.hero-label span.dot{width:6px;height:6px;border-radius:50%;background:var(--orange);box-shadow:0 0 10px var(--orange);}
-.hero h1{font-size:clamp(2.3rem,5.6vw,4.3rem);margin-bottom:26px;color:var(--white);}
-.hero h1 .line{display:block;overflow:hidden;}
-.hero h1 .line span{display:inline-block;opacity:0;transform:translateY(110%);animation:revealUp 1s var(--ease) forwards;color:var(--white);}
-.hero h1 .line:nth-child(1) span{animation-delay:.35s;}
-.hero h1 .line:nth-child(2) span{animation-delay:.5s;background:linear-gradient(100deg,var(--orange-soft),var(--orange));-webkit-background-clip:text;background-clip:text;color:transparent;}
-@keyframes revealUp{to{opacity:1;transform:translateY(0);}}
-.hero p.lead{font-size:clamp(1rem,1.5vw,1.14rem);color:var(--dark-muted);max-width:600px;margin-bottom:40px;opacity:0;animation:revealUp .9s var(--ease) .7s forwards;}
-.hero-actions{display:flex;flex-wrap:wrap;gap:16px;opacity:0;animation:revealUp .9s var(--ease) .9s forwards;}
-.hero-actions .btn-outline{border-color:rgba(255,255,255,0.3);color:var(--white);background:rgba(255,255,255,0.05);}
-.hero-actions .btn-outline:hover{border-color:var(--orange-soft);color:var(--orange-soft);}
-.scroll-cue{position:absolute;left:50%;bottom:34px;transform:translateX(-50%);z-index:3;display:flex;flex-direction:column;align-items:center;gap:10px;opacity:0;animation:revealUp .9s var(--ease) 1.2s forwards;}
-.scroll-cue .track{width:1px;height:44px;background:linear-gradient(180deg,var(--orange-soft),transparent);position:relative;overflow:hidden;}
-.scroll-cue .track::after{content:'';position:absolute;top:-20px;left:0;width:100%;height:20px;background:var(--white);animation:scrollDrop 1.8s ease-in-out infinite;}
-@keyframes scrollDrop{0%{top:-20px;}100%{top:44px;}}
-.scroll-cue span{font-size:10px;letter-spacing:0.3em;color:var(--dark-muted);text-transform:uppercase;}
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Shree Himal Group | Construction & Infrastructure">
+  <meta property="og:description" content="Construction, infrastructure, material supply and equipment accessory support from Murgiya, Sainamaina-04, Rupandehi.">
+  <meta property="og:image" content="home.png">
+  <meta property="og:site_name" content="Shree Himal Group">
 
-/* ===== Section headers ===== */
-.eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:12px;font-weight:700;letter-spacing:0.26em;text-transform:uppercase;color:var(--orange);margin-bottom:18px;}
-.eyebrow::before{content:'';width:26px;height:1px;background:var(--orange);}
-.section-title{font-size:clamp(1.75rem,3.6vw,2.7rem);margin-bottom:20px;max-width:760px;}
-.section-desc{color:var(--body-muted);font-size:1.02rem;max-width:640px;}
-.reveal{opacity:0;transform:translateY(32px);transition:opacity .8s var(--ease),transform .8s var(--ease);}
-.reveal.in{opacity:1;transform:translateY(0);}
-.reveal-stagger .reveal:nth-child(1){transition-delay:.05s;}
-.reveal-stagger .reveal:nth-child(2){transition-delay:.13s;}
-.reveal-stagger .reveal:nth-child(3){transition-delay:.21s;}
-.reveal-stagger .reveal:nth-child(4){transition-delay:.29s;}
-.reveal-stagger .reveal:nth-child(5){transition-delay:.37s;}
-.reveal-stagger .reveal:nth-child(6){transition-delay:.45s;}
+  <meta name="theme-color" content="#171a1d">
 
-/* ===== Intro section ===== */
-#intro{padding:120px 0;background:var(--bg-page);position:relative;overflow:hidden;}
-.intro-grid{display:grid;grid-template-columns:1.1fr 0.9fr;gap:70px;align-items:center;}
-.intro-panel{position:relative;aspect-ratio:4/5;border-radius:20px;overflow:hidden;background:linear-gradient(150deg,var(--brinjal),var(--purple) 55%,var(--violet));box-shadow:var(--shadow-lg);}
-.intro-panel .panel-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,0.07) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,0.07) 1px,transparent 1px);background-size:40px 40px;}
-.intro-panel .panel-frame{position:absolute;inset:22px;border:1px solid rgba(255,255,255,0.18);border-radius:14px;}
-.intro-panel .panel-glow{position:absolute;width:60%;height:60%;border-radius:50%;background:radial-gradient(circle,rgba(232,93,4,0.35),transparent 70%);filter:blur(50px);bottom:-10%;right:-10%;}
-.intro-panel .panel-mark{position:absolute;bottom:30px;left:30px;right:30px;}
-.intro-panel .panel-mark .num{font-family:'Manrope',sans-serif;font-weight:800;font-size:12px;letter-spacing:.25em;color:var(--orange-soft);text-transform:uppercase;}
-.intro-panel .panel-mark h4{font-size:1.25rem;margin-top:10px;color:var(--white);}
-.intro-text p{color:var(--body-muted);margin-bottom:18px;font-size:1.02rem;}
-.intro-stats{display:flex;gap:0;margin-top:34px;flex-wrap:wrap;border-top:1px solid var(--line);padding-top:26px;}
-.stat-item{flex:1;min-width:170px;padding:0 22px 0 0;}
-.stat-label{font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--body-muted);}
-.stat-item{padding-left:18px;border-left:2px solid var(--orange);margin-right:14px;}
-.stat-title{font-family:'Manrope',sans-serif;font-weight:700;font-size:1.02rem;color:var(--ink);margin-bottom:4px;}
+  <style>
+    /* =========================================================
+       SHREE HIMAL GROUP
+       Complete responsive website stylesheet
+       ========================================================= */
 
-/* ===== Who we are ===== */
-#who{padding:120px 0;position:relative;background:var(--bg-alt);}
-.who-grid{display:grid;grid-template-columns:0.85fr 1.15fr;gap:70px;}
-.who-list{display:grid;gap:4px;margin-top:30px;}
-.who-list li{display:flex;gap:16px;align-items:flex-start;padding:20px 0;border-top:1px solid var(--line);}
-.who-list li:first-child{border-top:none;padding-top:0;}
-.who-list i{color:var(--orange);margin-top:4px;font-size:15px;min-width:16px;}
-.who-list p{color:var(--body-muted);font-size:.97rem;}
-.who-list strong{color:var(--ink);}
+    :root {
+      --dark: #171a1d;
+      --dark-2: #202428;
+      --dark-3: #292e33;
+      --charcoal: #33383d;
+      --text: #25282b;
+      --muted: #697078;
+      --light: #f5f5f2;
+      --white: #ffffff;
+      --border: #e3e4e1;
+      --accent: #d59a32;
+      --accent-dark: #a96f16;
+      --accent-light: #f1c56e;
+      --earth: #76634b;
 
-/* ===== Leadership ===== */
-#leadership{padding:110px 0;background:var(--bg-page);position:relative;overflow:hidden;}
-.leader-card{display:grid;grid-template-columns:0.6fr 1.4fr;gap:60px;align-items:center;background:var(--white);border:1px solid var(--line);border-radius:24px;padding:44px;box-shadow:var(--shadow);}
-.leader-photo{position:relative;border-radius:18px;overflow:hidden;aspect-ratio:3/4;background:linear-gradient(160deg,var(--violet),var(--brinjal));padding:3px;}
-.leader-photo-inner{position:relative;width:100%;height:100%;border-radius:15px;overflow:hidden;background:linear-gradient(160deg,var(--purple),var(--brinjal));}
-.leader-photo-inner img{width:100%;height:100%;object-fit:cover;filter:saturate(1.02) contrast(1.01);}
-.leader-photo-inner::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,rgba(44,10,62,0.65));}
-.leader-photo .fallback-initial{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-family:'Manrope',sans-serif;font-weight:800;font-size:4rem;color:rgba(255,255,255,0.4);}
-.leader-name{font-size:1.8rem;margin-bottom:6px;}
-.leader-role{color:var(--orange);font-weight:700;letter-spacing:.05em;text-transform:uppercase;font-size:.82rem;margin-bottom:20px;}
-.leader-copy p{color:var(--body-muted);}
+      --container: 1180px;
+      --header-height: 78px;
 
-/* ===== What we do cards ===== */
-#services{padding:120px 0;position:relative;background:var(--bg-alt);}
-.services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:52px;}
-.service-card{position:relative;padding:36px 28px 30px;border-radius:18px;background:var(--white);border:1px solid var(--line);overflow:hidden;transition:transform .45s var(--ease),box-shadow .45s var(--ease),border-color .45s var(--ease);box-shadow:0 2px 10px rgba(43,10,62,0.03);}
-.service-card:hover{transform:translateY(-6px);border-color:rgba(232,93,4,0.35);box-shadow:var(--shadow);}
-.service-icon{width:52px;height:52px;border-radius:14px;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,rgba(107,42,148,0.14),rgba(232,93,4,0.14));margin-bottom:24px;font-size:20px;color:var(--violet);transition:transform .45s var(--ease),color .45s ease;}
-.service-card:hover .service-icon{transform:scale(1.08) rotate(-3deg);color:var(--orange);}
-.service-card h3{font-size:1.14rem;margin-bottom:12px;}
-.service-card p{color:var(--body-muted);font-size:.93rem;}
-.service-num{position:absolute;top:24px;right:26px;font-family:'Manrope',sans-serif;font-weight:800;font-size:.72rem;color:var(--line);letter-spacing:.1em;}
+      --shadow-sm: 0 8px 25px rgba(20, 23, 25, 0.07);
+      --shadow-md: 0 18px 45px rgba(20, 23, 25, 0.11);
+      --shadow-lg: 0 28px 70px rgba(20, 23, 25, 0.16);
 
-/* ===== Projects ===== */
-#projects{padding:120px 0;background:var(--bg-page);position:relative;overflow:hidden;}
-.projects-list{display:grid;gap:24px;margin-top:52px;}
-.project-card{position:relative;border-radius:20px;overflow:hidden;border:1px solid var(--line);background:var(--white);cursor:pointer;box-shadow:var(--shadow);}
-.project-media{position:relative;aspect-ratio:16/8;overflow:hidden;background:var(--bg-alt);}
-.project-media img{width:100%;height:100%;object-fit:cover;transition:transform .8s var(--ease);}
-.project-card:hover .project-media img{transform:scale(1.06);}
-.project-media .fallback{position:absolute;inset:0;background:linear-gradient(135deg,var(--brinjal),var(--violet));display:flex;align-items:center;justify-content:center;}
-.project-media .fallback i{font-size:2.4rem;color:rgba(255,255,255,0.3);}
-.project-media::after{content:'';position:absolute;inset:0;background:linear-gradient(0deg,rgba(27,15,36,0.92) 8%,rgba(27,15,36,0.1) 55%,transparent 78%);}
-.project-info{position:absolute;left:0;right:0;bottom:0;padding:32px 34px;display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap;}
-.project-meta-top{position:absolute;top:26px;left:34px;display:flex;align-items:center;gap:14px;}
-.project-num{font-family:'Manrope',sans-serif;font-weight:800;font-size:.82rem;letter-spacing:.14em;color:var(--orange-soft);}
-.project-cat{font-size:.7rem;letter-spacing:.13em;text-transform:uppercase;color:var(--white);padding:6px 14px;border:1px solid rgba(255,255,255,0.28);border-radius:20px;background:rgba(255,255,255,0.08);backdrop-filter:blur(6px);}
-.project-info h3{font-size:1.55rem;max-width:560px;margin-bottom:8px;color:var(--white);}
-.project-view{display:inline-flex;align-items:center;gap:10px;font-size:.76rem;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--white);padding:12px 22px;border-radius:30px;border:1px solid rgba(255,255,255,0.3);background:rgba(255,255,255,0.08);backdrop-filter:blur(6px);white-space:nowrap;transition:background .3s ease,border-color .3s ease;}
-.project-card:hover .project-view{background:linear-gradient(120deg,var(--violet),var(--orange));border-color:transparent;}
+      --radius-sm: 10px;
+      --radius-md: 16px;
+      --radius-lg: 24px;
 
-/* ===== Awards ===== */
-#awards{padding:120px 0;position:relative;background:var(--bg-alt);}
-.awards-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;margin-top:52px;}
-.award-card{position:relative;border-radius:20px;overflow:hidden;aspect-ratio:4/3;border:1px solid var(--line);cursor:pointer;background:var(--white);box-shadow:var(--shadow);}
-.award-card img{width:100%;height:100%;object-fit:cover;transition:transform .8s var(--ease);}
-.award-card:hover img{transform:scale(1.07);}
-.award-card .fallback{position:absolute;inset:0;background:linear-gradient(135deg,var(--purple),var(--brinjal));display:flex;align-items:center;justify-content:center;}
-.award-card .fallback i{font-size:2.2rem;color:rgba(255,255,255,0.3);}
-.award-card::after{content:'';position:absolute;inset:0;background:linear-gradient(0deg,rgba(27,15,36,0.9),transparent 60%);}
-.award-caption{position:absolute;left:24px;bottom:22px;right:24px;}
-.award-caption .tag{font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;color:var(--orange-soft);margin-bottom:8px;display:block;}
-.award-caption h4{font-size:1.1rem;color:var(--white);}
+      --transition: 0.3s ease;
+    }
 
-/* ===== Gallery ===== */
-#gallery{padding:120px 0;background:var(--bg-page);}
-.gallery-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:52px;}
-.gallery-item{position:relative;aspect-ratio:1/1;border-radius:14px;overflow:hidden;cursor:pointer;border:1px solid var(--line);background:var(--bg-alt);}
-.gallery-item img{width:100%;height:100%;object-fit:cover;transition:transform .6s var(--ease);}
-.gallery-item:hover img{transform:scale(1.1);}
-.gallery-item .fallback{position:absolute;inset:0;background:linear-gradient(150deg,var(--brinjal),var(--purple));display:flex;align-items:center;justify-content:center;}
-.gallery-item .fallback i{font-size:1.3rem;color:rgba(255,255,255,0.28);}
-.gallery-item::after{content:'';position:absolute;inset:0;background:rgba(27,15,36,0.4);opacity:0;transition:opacity .4s ease;}
-.gallery-item .view-icon{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;opacity:0;transition:opacity .4s ease;z-index:2;}
-.gallery-item .view-icon i{width:40px;height:40px;border-radius:50%;background:rgba(255,255,255,0.14);backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,0.3);display:flex;align-items:center;justify-content:center;color:var(--white);font-size:13px;}
-.gallery-item:hover::after{opacity:1;}
-.gallery-item:hover .view-icon{opacity:1;}
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-/* ===== Contact ===== */
-#contact{padding:120px 0;position:relative;overflow:hidden;background:var(--bg-alt);}
-.contact-head{max-width:760px;margin-bottom:56px;}
-.contact-grid{display:grid;grid-template-columns:0.9fr 1.1fr;gap:56px;}
-.contact-cards{display:grid;gap:14px;margin-bottom:28px;}
-.contact-card{display:flex;align-items:center;gap:18px;padding:20px 22px;border-radius:16px;background:var(--white);border:1px solid var(--line);transition:border-color .3s ease,transform .3s ease;box-shadow:0 2px 10px rgba(43,10,62,0.03);}
-.contact-card:hover{border-color:rgba(232,93,4,0.3);transform:translateX(4px);}
-.contact-icon{width:46px;height:46px;min-width:46px;border-radius:13px;background:linear-gradient(135deg,var(--violet),var(--orange));display:flex;align-items:center;justify-content:center;font-size:16px;color:var(--white);}
-.contact-card .label{font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--body-muted);margin-bottom:4px;}
-.contact-card .value{font-weight:600;font-size:.96rem;color:var(--ink);word-break:break-word;}
-.social-row{display:flex;gap:14px;flex-wrap:wrap;margin-top:6px;}
-.social-btn{display:inline-flex;align-items:center;gap:10px;padding:13px 22px;border-radius:30px;border:1px solid var(--line);background:var(--white);font-size:.8rem;font-weight:700;letter-spacing:.03em;transition:all .3s ease;min-height:44px;color:var(--ink);}
-.social-btn:hover{transform:translateY(-3px);}
-.social-btn.whatsapp:hover{background:#25D366;border-color:#25D366;color:#0a1a0f;}
-.social-btn.facebook:hover{background:#1877F2;border-color:#1877F2;color:var(--white);}
-.social-btn.mail:hover{background:linear-gradient(120deg,var(--violet),var(--orange));border-color:transparent;color:var(--white);}
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 85px;
+    }
 
-.form-panel{padding:38px;border-radius:22px;background:var(--white);border:1px solid var(--line);box-shadow:var(--shadow);}
-.form-row{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-bottom:18px;}
-.field{display:flex;flex-direction:column;gap:8px;}
-.field.full{grid-column:1/-1;}
-.field label{font-size:.74rem;letter-spacing:.1em;text-transform:uppercase;color:var(--body-muted);}
-.field input,.field textarea{background:var(--bg-alt);border:1px solid var(--line);border-radius:10px;padding:14px 16px;color:var(--ink);font-size:.95rem;transition:border-color .3s ease,background .3s ease;min-height:44px;}
-.field input:focus,.field textarea:focus{border-color:var(--orange);background:var(--white);}
-.field textarea{resize:vertical;min-height:120px;}
-.field .err{font-size:.75rem;color:#C23B14;min-height:16px;}
-.form-success{display:none;align-items:center;gap:12px;padding:16px 18px;border-radius:12px;background:rgba(37,150,90,0.08);border:1px solid rgba(37,150,90,0.3);color:#1F7A4C;font-size:.9rem;margin-top:18px;}
-.form-success.show{display:flex;}
+    body {
+      font-family:
+        Inter,
+        ui-sans-serif,
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+      color: var(--text);
+      background: var(--white);
+      line-height: 1.65;
+      overflow-x: hidden;
+    }
 
-.map-wrap{margin-top:64px;border-radius:22px;overflow:hidden;border:1px solid var(--line);box-shadow:var(--shadow);}
-.map-frame{position:relative;width:100%;aspect-ratio:16/6;background:var(--bg-alt);}
-.map-frame iframe{width:100%;height:100%;border:0;}
-.map-bar{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap;padding:24px 30px;background:var(--white);}
-.map-bar h4{font-size:1.02rem;margin-bottom:4px;}
-.map-bar p{color:var(--body-muted);font-size:.85rem;}
+    body.menu-open {
+      overflow: hidden;
+    }
 
-/* Floating WhatsApp */
-.float-whatsapp{position:fixed;right:26px;bottom:26px;width:56px;height:56px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;font-size:24px;color:#fff;box-shadow:0 12px 30px rgba(37,211,102,0.35);z-index:900;transition:transform .35s var(--ease);}
-.float-whatsapp:hover{transform:scale(1.08);}
+    img {
+      max-width: 100%;
+      display: block;
+    }
 
-/* Back to top */
-.back-top{position:fixed;right:26px;bottom:94px;width:46px;height:46px;border-radius:50%;background:var(--white);border:1px solid var(--line);box-shadow:var(--shadow);display:flex;align-items:center;justify-content:center;color:var(--ink);z-index:900;opacity:0;visibility:hidden;transform:translateY(10px);transition:all .4s var(--ease);}
-.back-top.show{opacity:1;visibility:visible;transform:translateY(0);}
-.back-top:hover{background:linear-gradient(120deg,var(--violet),var(--orange));border-color:transparent;color:var(--white);}
+    button,
+    input,
+    textarea,
+    select {
+      font: inherit;
+    }
 
-/* ===== Footer (dark, matches hero) ===== */
-footer{padding:76px 0 28px;background:var(--brinjal);position:relative;overflow:hidden;}
-.footer-grid{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:50px;margin-bottom:56px;position:relative;z-index:1;}
-.footer-brand-main{font-size:1.1rem;letter-spacing:.03em;color:var(--white);}
-.footer-brand-sub{font-size:.72rem;letter-spacing:.24em;color:var(--orange-soft);margin:6px 0 20px;}
-.footer-col h5{font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--dark-muted);margin-bottom:18px;}
-.footer-col ul{display:grid;gap:12px;}
-.footer-col a{color:var(--dark-muted);font-size:.9rem;transition:color .3s ease,padding-left .3s ease;}
-.footer-col a:hover{color:var(--white);padding-left:4px;}
-.footer-contact li{display:flex;gap:10px;align-items:flex-start;color:var(--dark-muted);font-size:.88rem;margin-bottom:13px;}
-.footer-contact i{color:var(--orange-soft);margin-top:3px;}
-.footer-bottom{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px;padding-top:26px;border-top:1px solid rgba(255,255,255,0.1);font-size:.8rem;color:var(--dark-muted);position:relative;z-index:1;}
+    button,
+    a {
+      -webkit-tap-highlight-color: transparent;
+    }
 
-/* ===== Modal / Lightbox ===== */
-.overlay{position:fixed;inset:0;background:rgba(27,15,36,0.7);backdrop-filter:blur(8px);z-index:2000;display:flex;align-items:center;justify-content:center;opacity:0;visibility:hidden;transition:opacity .4s var(--ease),visibility .4s var(--ease);padding:24px;}
-.overlay.open{opacity:1;visibility:visible;}
-.overlay-close{position:absolute;top:26px;right:26px;width:46px;height:46px;border-radius:50%;background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.25);display:flex;align-items:center;justify-content:center;color:var(--white);font-size:18px;z-index:10;transition:background .3s ease,transform .3s ease;}
-.overlay-close:hover{background:rgba(232,93,4,0.35);transform:rotate(90deg);}
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
 
-.project-modal-box{max-width:900px;width:100%;background:var(--white);border-radius:20px;overflow:hidden;border:1px solid var(--line);transform:translateY(24px) scale(.97);transition:transform .5s var(--ease);max-height:88vh;overflow-y:auto;}
-.overlay.open .project-modal-box{transform:translateY(0) scale(1);}
-.pm-media{position:relative;aspect-ratio:16/9;background:var(--bg-alt);}
-.pm-media img{width:100%;height:100%;object-fit:cover;}
-.pm-media .fallback{position:absolute;inset:0;background:linear-gradient(135deg,var(--brinjal),var(--violet));display:flex;align-items:center;justify-content:center;}
-.pm-media .fallback i{font-size:2.6rem;color:rgba(255,255,255,0.3);}
-.pm-body{padding:32px;}
-.pm-body .project-cat{position:static;display:inline-block;margin-bottom:16px;color:var(--violet);border-color:var(--line);background:var(--bg-alt);}
-.pm-body h3{font-size:1.5rem;margin-bottom:14px;}
-.pm-body p{color:var(--body-muted);}
+    ul {
+      list-style: none;
+    }
 
-.lightbox-wrap{position:relative;max-width:1100px;width:100%;display:flex;align-items:center;justify-content:center;}
-.lightbox-img-holder{position:relative;width:100%;max-height:82vh;border-radius:14px;overflow:hidden;background:var(--white);display:flex;align-items:center;justify-content:center;aspect-ratio:16/10;}
-.lightbox-img-holder img{width:100%;height:100%;object-fit:contain;background:#0d0512;opacity:0;transition:opacity .4s ease;}
-.lightbox-img-holder img.loaded{opacity:1;}
-.lightbox-img-holder .fallback{position:absolute;inset:0;background:linear-gradient(135deg,var(--brinjal),var(--purple));display:flex;align-items:center;justify-content:center;}
-.lightbox-img-holder .fallback i{font-size:2.8rem;color:rgba(255,255,255,0.3);}
-.lb-nav{position:absolute;top:50%;transform:translateY(-50%);width:50px;height:50px;border-radius:50%;background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.25);display:flex;align-items:center;justify-content:center;color:var(--white);font-size:17px;transition:background .3s ease;z-index:10;}
-.lb-nav:hover{background:linear-gradient(120deg,var(--violet),var(--orange));}
-.lb-prev{left:-68px;}
-.lb-next{right:-68px;}
-.lb-counter{position:absolute;bottom:-40px;left:50%;transform:translateX(-50%);font-size:.84rem;color:var(--dark-muted);letter-spacing:.05em;}
+    ::selection {
+      background: var(--accent);
+      color: var(--dark);
+    }
 
-/* Mobile nav overlay */
-.mobile-nav{position:fixed;inset:0;background:var(--brinjal);z-index:1100;display:flex;flex-direction:column;justify-content:center;padding:40px;opacity:0;visibility:hidden;transform:translateX(100%);transition:transform .5s var(--ease),opacity .5s var(--ease),visibility .5s var(--ease);}
-.mobile-nav.open{opacity:1;visibility:visible;transform:translateX(0);}
-.mobile-nav ul{display:grid;gap:6px;}
-.mobile-nav a{font-family:'Manrope',sans-serif;font-size:1.6rem;font-weight:700;color:var(--white);padding:13px 0;border-bottom:1px solid rgba(255,255,255,0.1);display:block;opacity:0;transform:translateY(16px);transition:opacity .5s ease,transform .5s ease;}
-.mobile-nav.open a{opacity:1;transform:translateY(0);}
-.mobile-nav.open a:nth-child(1){transition-delay:.1s;}
-.mobile-nav.open a:nth-child(2){transition-delay:.15s;}
-.mobile-nav.open a:nth-child(3){transition-delay:.2s;}
-.mobile-nav.open a:nth-child(4){transition-delay:.25s;}
-.mobile-nav.open a:nth-child(5){transition-delay:.3s;}
-.mobile-nav.open a:nth-child(6){transition-delay:.35s;}
-.mobile-nav.open a:nth-child(7){transition-delay:.4s;}
-.mobile-nav-foot{margin-top:38px;display:flex;gap:16px;opacity:0;transition:opacity .6s ease .5s;}
-.mobile-nav.open .mobile-nav-foot{opacity:1;}
-.mobile-nav-foot .btn-outline{border-color:rgba(255,255,255,0.3);color:var(--white);background:rgba(255,255,255,0.05);}
+    /* =========================================================
+       ACCESSIBILITY
+       ========================================================= */
 
-/* Cursor glow (desktop only, subtle) */
-#cursor-glow{position:fixed;width:380px;height:380px;border-radius:50%;background:radial-gradient(circle,rgba(232,93,4,0.06),transparent 70%);pointer-events:none;z-index:5;transform:translate(-50%,-50%);transition:opacity .3s ease;opacity:0;}
+    :focus-visible {
+      outline: 3px solid var(--accent);
+      outline-offset: 3px;
+    }
 
-/* ===== Responsive ===== */
-@media (max-width:1080px){
-  .services-grid{grid-template-columns:repeat(2,1fr);}
-  .gallery-grid{grid-template-columns:repeat(3,1fr);}
-  .intro-grid,.who-grid,.contact-grid{grid-template-columns:1fr;}
-  .leader-card{grid-template-columns:1fr;text-align:center;}
-  .leader-photo{max-width:280px;margin:0 auto;}
-  .intro-panel{order:-1;max-width:460px;margin:0 auto;}
-  .footer-grid{grid-template-columns:1fr 1fr;}
-}
-@media (max-width:860px){
-  nav.primary-nav{display:none;}
-  .hamburger{display:flex;}
-  .services-grid{grid-template-columns:1fr;}
-  .awards-grid{grid-template-columns:1fr;}
-  .gallery-grid{grid-template-columns:repeat(2,1fr);}
-  .form-row{grid-template-columns:1fr;}
-  .lb-prev{left:8px;}
-  .lb-next{right:8px;}
-  .footer-grid{grid-template-columns:1fr;gap:34px;}
-  .leader-card{padding:30px;}
-}
-@media (max-width:560px){
-  .container{width:90%;}
-  #hero{padding-top:110px;}
-  .hero-actions{flex-direction:column;align-items:stretch;}
-  .btn{justify-content:center;}
-  .project-info{flex-direction:column;align-items:flex-start;}
-  .float-whatsapp{width:52px;height:52px;font-size:22px;right:16px;bottom:16px;}
-  .back-top{right:16px;bottom:82px;width:44px;height:44px;}
-  .gallery-grid{grid-template-columns:repeat(2,1fr);gap:10px;}
-}
-@media (prefers-reduced-motion:reduce){
-  *{animation-duration:0.01ms !important;animation-iteration-count:1 !important;transition-duration:0.01ms !important;scroll-behavior:auto !important;}
-}
-</style>
+    .skip-link {
+      position: fixed;
+      top: -60px;
+      left: 20px;
+      z-index: 9999;
+      background: var(--accent);
+      color: var(--dark);
+      padding: 10px 18px;
+      border-radius: 0 0 8px 8px;
+      font-weight: 800;
+      transition: top 0.2s ease;
+    }
+
+    .skip-link:focus {
+      top: 0;
+    }
+
+    /* =========================================================
+       GENERAL
+       ========================================================= */
+
+    .container {
+      width: min(var(--container), calc(100% - 40px));
+      margin-inline: auto;
+    }
+
+    .section {
+      padding: 105px 0;
+      position: relative;
+    }
+
+    .section-light {
+      background: var(--white);
+    }
+
+    .section-soft {
+      background: var(--light);
+    }
+
+    .section-dark {
+      background: var(--dark);
+      color: var(--white);
+    }
+
+    .section-heading {
+      max-width: 760px;
+      margin-bottom: 55px;
+    }
+
+    .section-heading.center {
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--accent-dark);
+      font-size: 0.78rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      margin-bottom: 14px;
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 30px;
+      height: 2px;
+      background: var(--accent);
+      display: inline-block;
+    }
+
+    .section-dark .eyebrow {
+      color: var(--accent-light);
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+      font-family:
+        "Arial",
+        "Helvetica Neue",
+        sans-serif;
+      line-height: 1.15;
+      letter-spacing: -0.025em;
+    }
+
+    h2 {
+      font-size: clamp(2rem, 4vw, 3.3rem);
+      margin-bottom: 18px;
+    }
+
+    .section-heading p {
+      color: var(--muted);
+      font-size: 1.04rem;
+    }
+
+    .section-dark .section-heading p {
+      color: #b9bec3;
+    }
+
+    .accent-line {
+      width: 60px;
+      height: 3px;
+      background: var(--accent);
+      margin-top: 22px;
+    }
+
+    .center .accent-line {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* =========================================================
+       HEADER
+       ========================================================= */
+
+    .header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: var(--header-height);
+      z-index: 1000;
+      color: var(--white);
+      background: rgba(23, 26, 29, 0.72);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      transition:
+        background var(--transition),
+        height var(--transition),
+        box-shadow var(--transition);
+    }
+
+    .header.scrolled {
+      height: 68px;
+      background: rgba(23, 26, 29, 0.97);
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.16);
+    }
+
+    .nav-container {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      min-width: 250px;
+    }
+
+    .brand-mark {
+      width: 42px;
+      height: 42px;
+      border: 1px solid rgba(213, 154, 50, 0.7);
+      display: grid;
+      place-items: center;
+      color: var(--accent);
+      font-weight: 900;
+      font-size: 0.95rem;
+      position: relative;
+      flex-shrink: 0;
+    }
+
+    .brand-mark::before {
+      content: "";
+      position: absolute;
+      width: 18px;
+      height: 18px;
+      border-top: 2px solid var(--accent);
+      border-left: 2px solid var(--accent);
+      top: 5px;
+      left: 5px;
+    }
+
+    .brand-name {
+      display: block;
+      font-size: 1.05rem;
+      font-weight: 900;
+      letter-spacing: 0.08em;
+      line-height: 1.15;
+    }
+
+    .brand-tagline {
+      display: block;
+      margin-top: 3px;
+      color: #bfc3c6;
+      font-size: 0.62rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .nav-links a {
+      position: relative;
+      padding: 9px 12px;
+      color: #d8dbdd;
+      font-size: 0.84rem;
+      font-weight: 700;
+      transition: color var(--transition);
+    }
+
+    .nav-links a::after {
+      content: "";
+      position: absolute;
+      left: 12px;
+      right: 12px;
+      bottom: 2px;
+      height: 2px;
+      background: var(--accent);
+      transform: scaleX(0);
+      transform-origin: center;
+      transition: transform var(--transition);
+    }
+
+    .nav-links a:hover,
+    .nav-links a.active {
+      color: var(--white);
+    }
+
+    .nav-links a:hover::after,
+    .nav-links a.active::after {
+      transform: scaleX(1);
+    }
+
+    .mobile-toggle {
+      display: none;
+      width: 44px;
+      height: 44px;
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      background: transparent;
+      color: var(--white);
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    .hamburger {
+      width: 21px;
+      height: 15px;
+      margin: auto;
+      position: relative;
+    }
+
+    .hamburger span {
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      left: 0;
+      background: currentColor;
+      transition: 0.25s ease;
+    }
+
+    .hamburger span:nth-child(1) {
+      top: 0;
+    }
+
+    .hamburger span:nth-child(2) {
+      top: 6px;
+    }
+
+    .hamburger span:nth-child(3) {
+      top: 12px;
+    }
+
+    .mobile-toggle.open .hamburger span:nth-child(1) {
+      top: 6px;
+      transform: rotate(45deg);
+    }
+
+    .mobile-toggle.open .hamburger span:nth-child(2) {
+      opacity: 0;
+    }
+
+    .mobile-toggle.open .hamburger span:nth-child(3) {
+      top: 6px;
+      transform: rotate(-45deg);
+    }
+
+    /* =========================================================
+       HERO
+       ========================================================= */
+
+    .hero {
+      min-height: 100svh;
+      position: relative;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      background: var(--dark);
+      color: var(--white);
+    }
+
+    .hero-image {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      opacity: 0.76;
+      transform: scale(1.02);
+    }
+
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(
+          90deg,
+          rgba(10, 12, 14, 0.94) 0%,
+          rgba(10, 12, 14, 0.77) 40%,
+          rgba(10, 12, 14, 0.35) 75%,
+          rgba(10, 12, 14, 0.18) 100%
+        );
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 130px;
+      background: linear-gradient(transparent, rgba(23, 26, 29, 0.55));
+      pointer-events: none;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      padding-top: 90px;
+      max-width: 780px;
+    }
+
+    .hero-kicker {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--accent-light);
+      font-size: 0.78rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      margin-bottom: 22px;
+    }
+
+    .hero-kicker::before {
+      content: "";
+      width: 38px;
+      height: 2px;
+      background: var(--accent);
+    }
+
+    .hero h1 {
+      font-size: clamp(3rem, 7vw, 6.2rem);
+      max-width: 850px;
+      margin-bottom: 25px;
+      letter-spacing: -0.055em;
+    }
+
+    .hero h1 span {
+      color: var(--accent-light);
+    }
+
+    .hero-text {
+      max-width: 720px;
+      color: #d6d9db;
+      font-size: clamp(1rem, 1.7vw, 1.18rem);
+      line-height: 1.75;
+      margin-bottom: 35px;
+    }
+
+    .hero-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 13px;
+    }
+
+    .btn {
+      min-height: 50px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 9px;
+      padding: 13px 22px;
+      border-radius: 7px;
+      border: 1px solid transparent;
+      font-size: 0.88rem;
+      font-weight: 800;
+      cursor: pointer;
+      transition:
+        transform var(--transition),
+        background var(--transition),
+        color var(--transition),
+        border-color var(--transition),
+        box-shadow var(--transition);
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+    }
+
+    .btn-primary {
+      background: var(--accent);
+      color: var(--dark);
+      box-shadow: 0 10px 28px rgba(213, 154, 50, 0.18);
+    }
+
+    .btn-primary:hover {
+      background: var(--accent-light);
+    }
+
+    .btn-outline {
+      background: rgba(255, 255, 255, 0.04);
+      border-color: rgba(255, 255, 255, 0.28);
+      color: var(--white);
+    }
+
+    .btn-outline:hover {
+      border-color: var(--accent);
+      color: var(--accent-light);
+      background: rgba(213, 154, 50, 0.07);
+    }
+
+    .hero-scroll {
+      position: absolute;
+      bottom: 30px;
+      right: 35px;
+      z-index: 3;
+      color: #d0d2d3;
+      font-size: 0.67rem;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      writing-mode: vertical-rl;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .hero-scroll::after {
+      content: "";
+      width: 1px;
+      height: 55px;
+      background: var(--accent);
+    }
+
+    /* =========================================================
+       WHAT WE DO
+       ========================================================= */
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+    }
+
+    .service-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 30px 25px;
+      min-height: 245px;
+      position: relative;
+      overflow: hidden;
+      transition:
+        transform var(--transition),
+        box-shadow var(--transition),
+        border-color var(--transition);
+    }
+
+    .service-card::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 3px;
+      height: 0;
+      background: var(--accent);
+      transition: height var(--transition);
+    }
+
+    .service-card:hover {
+      transform: translateY(-7px);
+      box-shadow: var(--shadow-md);
+      border-color: #d7d8d5;
+    }
+
+    .service-card:hover::before {
+      height: 100%;
+    }
+
+    .service-icon {
+      width: 48px;
+      height: 48px;
+      display: grid;
+      place-items: center;
+      border-radius: 10px;
+      background: #f1eee7;
+      color: var(--accent-dark);
+      margin-bottom: 23px;
+    }
+
+    .service-icon svg {
+      width: 24px;
+      height: 24px;
+      stroke: currentColor;
+    }
+
+    .service-card h3 {
+      font-size: 1.15rem;
+      margin-bottom: 10px;
+    }
+
+    .service-card p {
+      color: var(--muted);
+      font-size: 0.9rem;
+      line-height: 1.7;
+    }
+
+    /* =========================================================
+       HIGHLIGHTS
+       ========================================================= */
+
+    .highlights {
+      background: var(--dark);
+      color: var(--white);
+      padding: 0;
+    }
+
+    .highlight-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    .highlight-item {
+      padding: 34px 26px;
+      border-right: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .highlight-item:last-child {
+      border-right: none;
+    }
+
+    .highlight-label {
+      display: block;
+      color: #8e969d;
+      font-size: 0.69rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      margin-bottom: 7px;
+    }
+
+    .highlight-value {
+      font-weight: 800;
+      color: var(--white);
+      font-size: 0.95rem;
+    }
+
+    .highlight-sub {
+      display: block;
+      color: #aeb4b8;
+      font-size: 0.78rem;
+      margin-top: 4px;
+    }
+
+    /* =========================================================
+       DOCUMENT PREVIEW
+       ========================================================= */
+
+    .documents {
+      padding-top: 0;
+    }
+
+    .document-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 25px;
+    }
+
+    .document-card {
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      background: var(--white);
+      cursor: pointer;
+      box-shadow: var(--shadow-sm);
+      transition:
+        transform var(--transition),
+        box-shadow var(--transition);
+    }
+
+    .document-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-md);
+    }
+
+    .document-image {
+      height: 330px;
+      background: #e9e8e5;
+      overflow: hidden;
+    }
+
+    .document-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      background: #eeeeeb;
+      transition: transform 0.5s ease;
+    }
+
+    .document-card:hover .document-image img {
+      transform: scale(1.025);
+    }
+
+    .document-info {
+      padding: 18px 20px;
+    }
+
+    .document-info h3 {
+      font-size: 1rem;
+      margin-bottom: 4px;
+    }
+
+    .document-info p {
+      color: var(--muted);
+      font-size: 0.8rem;
+    }
+
+    /* =========================================================
+       ABOUT
+       ========================================================= */
+
+    .about-layout {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 75px;
+      align-items: start;
+    }
+
+    .about-copy p {
+      color: var(--muted);
+      margin-bottom: 18px;
+      font-size: 1rem;
+    }
+
+    .info-list {
+      margin-top: 30px;
+      border-top: 1px solid var(--border);
+    }
+
+    .info-row {
+      display: grid;
+      grid-template-columns: 190px 1fr;
+      gap: 20px;
+      padding: 14px 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .info-row strong {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--muted);
+    }
+
+    .info-row span {
+      font-weight: 700;
+      font-size: 0.91rem;
+    }
+
+    /* =========================================================
+       TIMELINE
+       ========================================================= */
+
+    .timeline {
+      position: relative;
+      margin-top: 10px;
+      padding-left: 38px;
+    }
+
+    .timeline::before {
+      content: "";
+      position: absolute;
+      top: 10px;
+      bottom: 10px;
+      left: 9px;
+      width: 1px;
+      background: #d7d7d2;
+    }
+
+    .timeline-item {
+      position: relative;
+      padding: 0 0 42px 20px;
+    }
+
+    .timeline-item:last-child {
+      padding-bottom: 0;
+    }
+
+    .timeline-dot {
+      position: absolute;
+      left: -38px;
+      top: 2px;
+      width: 19px;
+      height: 19px;
+      background: var(--white);
+      border: 4px solid var(--accent);
+      border-radius: 50%;
+      z-index: 2;
+    }
+
+    .timeline-date {
+      display: inline-block;
+      font-size: 0.77rem;
+      font-weight: 900;
+      letter-spacing: 0.08em;
+      color: var(--accent-dark);
+      margin-bottom: 7px;
+    }
+
+    .timeline-item h3 {
+      font-size: 1.18rem;
+      margin-bottom: 6px;
+    }
+
+    .timeline-item p {
+      color: var(--muted);
+      font-size: 0.89rem;
+    }
+
+    /* =========================================================
+       BUSINESS ACTIVITIES
+       ========================================================= */
+
+    .activity-layout {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 22px;
+      margin-top: 55px;
+    }
+
+    .activity-card {
+      background: var(--light);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 36px;
+    }
+
+    .activity-number {
+      color: var(--accent-dark);
+      font-size: 0.7rem;
+      font-weight: 900;
+      letter-spacing: 0.15em;
+      margin-bottom: 15px;
+    }
+
+    .activity-card h3 {
+      font-size: 1.5rem;
+      margin-bottom: 14px;
+    }
+
+    .activity-card p {
+      color: var(--muted);
+      font-size: 0.93rem;
+      margin-bottom: 20px;
+    }
+
+    .pill-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .pill {
+      border: 1px solid #d8d7d1;
+      background: var(--white);
+      padding: 7px 11px;
+      border-radius: 50px;
+      font-size: 0.75rem;
+      font-weight: 700;
+    }
+
+    /* =========================================================
+       VISION MISSION
+       ========================================================= */
+
+    .vm-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      margin-top: 55px;
+    }
+
+    .vm-card {
+      padding: 40px;
+      background: #22262a;
+      border: 1px solid #373c41;
+      border-radius: var(--radius-lg);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .vm-card::after {
+      content: "";
+      position: absolute;
+      width: 140px;
+      height: 140px;
+      right: -55px;
+      bottom: -55px;
+      border: 1px solid rgba(213, 154, 50, 0.18);
+      border-radius: 50%;
+    }
+
+    .vm-icon {
+      width: 48px;
+      height: 48px;
+      display: grid;
+      place-items: center;
+      color: var(--accent-light);
+      background: rgba(213, 154, 50, 0.09);
+      border: 1px solid rgba(213, 154, 50, 0.22);
+      border-radius: 10px;
+      margin-bottom: 24px;
+    }
+
+    .vm-icon svg {
+      width: 23px;
+      height: 23px;
+      stroke: currentColor;
+    }
+
+    .vm-card h3 {
+      font-size: 1.45rem;
+      margin-bottom: 13px;
+    }
+
+    .vm-card p {
+      color: #b9bec3;
+      font-size: 0.94rem;
+    }
+
+    /* =========================================================
+       SERVICES SECTION
+       ========================================================= */
+
+    .service-detail-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .service-detail {
+      padding: 32px;
+      border: 1px solid #3a3e42;
+      background: #202428;
+      border-radius: var(--radius-md);
+      transition:
+        transform var(--transition),
+        border-color var(--transition),
+        background var(--transition);
+    }
+
+    .service-detail:hover {
+      transform: translateY(-5px);
+      border-color: rgba(213, 154, 50, 0.45);
+      background: #252a2e;
+    }
+
+    .service-detail h3 {
+      font-size: 1.25rem;
+      margin: 17px 0 12px;
+    }
+
+    .service-detail p {
+      color: #adb3b8;
+      font-size: 0.88rem;
+      margin-bottom: 18px;
+    }
+
+    .service-detail ul {
+      display: grid;
+      gap: 9px;
+    }
+
+    .service-detail li {
+      color: #d2d5d7;
+      font-size: 0.83rem;
+      position: relative;
+      padding-left: 18px;
+    }
+
+    .service-detail li::before {
+      content: "";
+      width: 5px;
+      height: 5px;
+      background: var(--accent);
+      border-radius: 50%;
+      position: absolute;
+      left: 0;
+      top: 9px;
+    }
+
+    /* =========================================================
+       PROJECTS
+       ========================================================= */
+
+    .projects-tabs {
+      display: flex;
+      gap: 4px;
+      background: #ecece8;
+      border-radius: 10px;
+      padding: 5px;
+      width: fit-content;
+      max-width: 100%;
+      margin-bottom: 30px;
+    }
+
+    .project-tab {
+      border: none;
+      background: transparent;
+      color: #61676c;
+      padding: 12px 20px;
+      border-radius: 7px;
+      font-weight: 800;
+      font-size: 0.84rem;
+      cursor: pointer;
+      transition: all var(--transition);
+    }
+
+    .project-tab.active {
+      background: var(--dark);
+      color: var(--white);
+      box-shadow: 0 5px 16px rgba(20, 23, 25, 0.14);
+    }
+
+    .project-panel {
+      display: none;
+      animation: panelFade 0.35s ease;
+    }
+
+    .project-panel.active {
+      display: block;
+    }
+
+    @keyframes panelFade {
+      from {
+        opacity: 0;
+        transform: translateY(7px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .project-card {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      min-height: 350px;
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      background: var(--dark);
+      color: var(--white);
+      box-shadow: var(--shadow-md);
+    }
+
+    .project-main {
+      padding: 45px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .project-number {
+      color: var(--accent-light);
+      font-size: 0.72rem;
+      font-weight: 900;
+      letter-spacing: 0.14em;
+      margin-bottom: 18px;
+    }
+
+    .project-main h3 {
+      font-size: clamp(1.8rem, 3vw, 2.65rem);
+      margin-bottom: 17px;
+    }
+
+    .project-main p {
+      color: #b7bdc1;
+      max-width: 620px;
+      font-size: 0.95rem;
+      margin-bottom: 25px;
+    }
+
+    .project-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .project-meta span {
+      padding: 7px 10px;
+      border: 1px solid #3c4247;
+      color: #d0d4d6;
+      border-radius: 5px;
+      font-size: 0.72rem;
+      font-weight: 700;
+    }
+
+    .project-visual {
+      min-height: 350px;
+      background:
+        linear-gradient(135deg, #3b4146, #1c2023);
+      display: grid;
+      place-items: center;
+      padding: 35px;
+      text-align: center;
+      border-left: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .project-placeholder {
+      width: 100%;
+      height: 100%;
+      min-height: 270px;
+      border: 1px dashed rgba(255, 255, 255, 0.25);
+      border-radius: 15px;
+      display: grid;
+      place-items: center;
+      color: #969da2;
+      font-size: 0.82rem;
+      letter-spacing: 0.04em;
+    }
+
+    /* =========================================================
+       ACHIEVEMENTS
+       ========================================================= */
+
+    .achievement-intro {
+      max-width: 820px;
+      margin: 0 auto 45px;
+      text-align: center;
+      color: #b9bec3;
+      font-size: 0.98rem;
+    }
+
+    .award-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .award-placeholder {
+      min-height: 290px;
+      border: 1px dashed #52585d;
+      background: #202428;
+      border-radius: var(--radius-md);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 25px;
+      color: #8e969c;
+      transition:
+        border-color var(--transition),
+        transform var(--transition);
+    }
+
+    .award-placeholder:hover {
+      border-color: rgba(213, 154, 50, 0.65);
+      transform: translateY(-4px);
+    }
+
+    .award-placeholder svg {
+      width: 38px;
+      height: 38px;
+      color: var(--accent);
+      margin-bottom: 15px;
+    }
+
+    .award-placeholder strong {
+      color: #d6d9db;
+      font-size: 0.92rem;
+      margin-bottom: 6px;
+    }
+
+    .award-placeholder span {
+      font-size: 0.75rem;
+    }
+
+    /* =========================================================
+       GALLERY
+       ========================================================= */
+
+    .gallery-grid {
+      columns: 4 240px;
+      column-gap: 14px;
+    }
+
+    .gallery-item {
+      break-inside: avoid;
+      margin-bottom: 14px;
+      position: relative;
+      overflow: hidden;
+      border-radius: 12px;
+      background: #e5e5e1;
+      cursor: pointer;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: auto;
+      display: block;
+      transition:
+        transform 0.55s ease,
+        filter 0.55s ease;
+    }
+
+    .gallery-overlay {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: flex-end;
+      padding: 17px;
+      background: linear-gradient(
+        transparent 45%,
+        rgba(10, 12, 14, 0.75)
+      );
+      opacity: 0;
+      transition: opacity var(--transition);
+    }
+
+    .gallery-overlay span {
+      color: var(--white);
+      font-size: 0.76rem;
+      font-weight: 800;
+    }
+
+    .gallery-item:hover img {
+      transform: scale(1.045);
+      filter: brightness(0.88);
+    }
+
+    .gallery-item:hover .gallery-overlay {
+      opacity: 1;
+    }
+
+    /* =========================================================
+       CONTACT
+       ========================================================= */
+
+    .contact-layout {
+      display: grid;
+      grid-template-columns: 0.85fr 1.15fr;
+      gap: 45px;
+      align-items: start;
+    }
+
+    .contact-intro h2 {
+      font-size: clamp(2.3rem, 4vw, 3.8rem);
+    }
+
+    .contact-intro > p {
+      color: #b8bec2;
+      max-width: 520px;
+      margin-bottom: 30px;
+    }
+
+    .contact-details {
+      display: grid;
+      gap: 16px;
+    }
+
+    .contact-detail {
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+    }
+
+    .contact-detail-icon {
+      width: 40px;
+      height: 40px;
+      flex-shrink: 0;
+      display: grid;
+      place-items: center;
+      color: var(--accent-light);
+      background: rgba(213, 154, 50, 0.08);
+      border: 1px solid rgba(213, 154, 50, 0.2);
+      border-radius: 8px;
+    }
+
+    .contact-detail-icon svg {
+      width: 19px;
+      height: 19px;
+      stroke: currentColor;
+    }
+
+    .contact-detail small {
+      display: block;
+      color: #858e94;
+      font-size: 0.68rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 2px;
+    }
+
+    .contact-detail span,
+    .contact-detail a {
+      color: #e0e3e5;
+      font-size: 0.88rem;
+    }
+
+    .contact-detail a:hover {
+      color: var(--accent-light);
+    }
+
+    .contact-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 9px;
+      margin-top: 28px;
+    }
+
+    .contact-action {
+      padding: 10px 14px;
+      border-radius: 7px;
+      border: 1px solid #3d4348;
+      color: #d9dddf;
+      font-size: 0.78rem;
+      font-weight: 800;
+      transition: all var(--transition);
+    }
+
+    .contact-action:hover {
+      border-color: var(--accent);
+      color: var(--accent-light);
+      transform: translateY(-2px);
+    }
+
+    /* =========================================================
+       FORM
+       ========================================================= */
+
+    .contact-form-wrap {
+      background: var(--white);
+      color: var(--text);
+      border-radius: var(--radius-lg);
+      padding: 35px;
+      box-shadow: var(--shadow-lg);
+    }
+
+    .contact-form-wrap h3 {
+      font-size: 1.5rem;
+      margin-bottom: 7px;
+    }
+
+    .form-note {
+      color: var(--muted);
+      font-size: 0.78rem;
+      margin-bottom: 24px;
+    }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+    }
+
+    .form-group.full {
+      grid-column: 1 / -1;
+    }
+
+    .form-group label {
+      font-size: 0.75rem;
+      font-weight: 800;
+      color: #555b60;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+      border: 1px solid #d7d9d8;
+      border-radius: 7px;
+      padding: 12px 13px;
+      background: #fafaf8;
+      color: var(--text);
+      outline: none;
+      transition:
+        border-color var(--transition),
+        box-shadow var(--transition);
+    }
+
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px rgba(213, 154, 50, 0.12);
+    }
+
+    .form-group textarea {
+      min-height: 125px;
+      resize: vertical;
+    }
+
+    .form-submit {
+      width: 100%;
+      margin-top: 18px;
+    }
+
+    .form-status {
+      display: none;
+      margin-top: 13px;
+      padding: 11px 13px;
+      border-radius: 7px;
+      background: #f3f0e8;
+      color: #66522e;
+      font-size: 0.8rem;
+    }
+
+    .form-status.show {
+      display: block;
+    }
+
+    /* =========================================================
+       MAP
+       ========================================================= */
+
+    .map-card {
+      margin-top: 45px;
+      border: 1px solid #343a3f;
+      border-radius: var(--radius-md);
+      padding: 22px;
+      background: #202428;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .map-info h3 {
+      font-size: 1.1rem;
+      margin-bottom: 4px;
+    }
+
+    .map-info p {
+      color: #969ea4;
+      font-size: 0.8rem;
+    }
+
+    /* =========================================================
+       FOOTER
+       ========================================================= */
+
+    .footer {
+      background: #111315;
+      color: var(--white);
+      border-top: 1px solid #282c2f;
+    }
+
+    .footer-main {
+      padding: 65px 0 45px;
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr 1fr;
+      gap: 55px;
+    }
+
+    .footer-brand p {
+      color: #92999e;
+      max-width: 390px;
+      font-size: 0.83rem;
+      margin-top: 15px;
+    }
+
+    .footer-heading {
+      font-size: 0.78rem;
+      color: var(--white);
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      margin-bottom: 17px;
+    }
+
+    .footer-links {
+      display: grid;
+      gap: 9px;
+    }
+
+    .footer-links a {
+      color: #949b9f;
+      font-size: 0.8rem;
+      transition: color var(--transition);
+    }
+
+    .footer-links a:hover {
+      color: var(--accent-light);
+    }
+
+    .footer-contact {
+      display: grid;
+      gap: 9px;
+    }
+
+    .footer-contact a,
+    .footer-contact span {
+      color: #949b9f;
+      font-size: 0.8rem;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid #282c2f;
+      padding: 18px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .footer-bottom p {
+      color: #737b80;
+      font-size: 0.72rem;
+    }
+
+    .social-links {
+      display: flex;
+      gap: 7px;
+    }
+
+    .social-link {
+      width: 35px;
+      height: 35px;
+      display: grid;
+      place-items: center;
+      border: 1px solid #353a3e;
+      border-radius: 7px;
+      color: #9ca3a7;
+      transition: all var(--transition);
+    }
+
+    .social-link:hover {
+      color: var(--accent-light);
+      border-color: var(--accent);
+      transform: translateY(-2px);
+    }
+
+    .social-link svg {
+      width: 17px;
+      height: 17px;
+      stroke: currentColor;
+    }
+
+    /* =========================================================
+       LIGHTBOX
+       ========================================================= */
+
+    .lightbox {
+      position: fixed;
+      inset: 0;
+      z-index: 3000;
+      background: rgba(7, 8, 9, 0.95);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 35px;
+      opacity: 0;
+      transition: opacity 0.25s ease;
+    }
+
+    .lightbox.open {
+      display: flex;
+      opacity: 1;
+    }
+
+    .lightbox-content {
+      max-width: min(1100px, 94vw);
+      max-height: 90vh;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .lightbox-image {
+      max-width: 100%;
+      max-height: 88vh;
+      width: auto;
+      height: auto;
+      object-fit: contain;
+      border-radius: 5px;
+      box-shadow: 0 25px 80px rgba(0, 0, 0, 0.5);
+    }
+
+    .lightbox-close,
+    .lightbox-prev,
+    .lightbox-next {
+      position: fixed;
+      z-index: 4;
+      width: 45px;
+      height: 45px;
+      display: grid;
+      place-items: center;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      background: rgba(0, 0, 0, 0.42);
+      color: var(--white);
+      border-radius: 50%;
+      cursor: pointer;
+      transition: all var(--transition);
+    }
+
+    .lightbox-close:hover,
+    .lightbox-prev:hover,
+    .lightbox-next:hover {
+      background: var(--accent);
+      color: var(--dark);
+      border-color: var(--accent);
+    }
+
+    .lightbox-close {
+      top: 20px;
+      right: 22px;
+    }
+
+    .lightbox-prev {
+      left: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    .lightbox-next {
+      right: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    .lightbox-caption {
+      position: fixed;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      color: #dfe2e3;
+      font-size: 0.76rem;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 7px 12px;
+      border-radius: 5px;
+    }
+
+    /* =========================================================
+       BACK TO TOP
+       ========================================================= */
+
+    .back-to-top {
+      position: fixed;
+      right: 22px;
+      bottom: 22px;
+      width: 43px;
+      height: 43px;
+      z-index: 900;
+      border: 1px solid rgba(213, 154, 50, 0.55);
+      background: var(--dark);
+      color: var(--accent-light);
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      cursor: pointer;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(12px);
+      transition: all var(--transition);
+    }
+
+    .back-to-top.show {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+
+    .back-to-top:hover {
+      background: var(--accent);
+      color: var(--dark);
+    }
+
+    /* =========================================================
+       REVEAL ANIMATIONS
+       ========================================================= */
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(22px);
+      transition:
+        opacity 0.7s ease,
+        transform 0.7s ease;
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* =========================================================
+       RESPONSIVE
+       ========================================================= */
+
+    @media (max-width: 1050px) {
+      .nav-links a {
+        padding-inline: 8px;
+      }
+
+      .brand {
+        min-width: 220px;
+      }
+
+      .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .highlight-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .highlight-item:nth-child(2) {
+        border-right: none;
+      }
+
+      .highlight-item:nth-child(-n + 2) {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      }
+
+      .service-detail-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .footer-main {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .footer-brand {
+        grid-column: 1 / -1;
+      }
+    }
+
+    @media (max-width: 850px) {
+      :root {
+        --header-height: 70px;
+      }
+
+      .header {
+        height: 70px;
+      }
+
+      .header.scrolled {
+        height: 64px;
+      }
+
+      .mobile-toggle {
+        display: grid;
+      }
+
+      .nav-links {
+        position: fixed;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        height: calc(100svh - 70px);
+        background: rgba(17, 19, 21, 0.985);
+        padding: 25px 20px 35px;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 3px;
+        overflow-y: auto;
+        transform: translateX(100%);
+        transition: transform 0.3s ease;
+      }
+
+      .nav-links.open {
+        transform: translateX(0);
+      }
+
+      .nav-links a {
+        width: 100%;
+        padding: 16px 10px;
+        font-size: 1rem;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+      }
+
+      .nav-links a::after {
+        display: none;
+      }
+
+      .about-layout,
+      .contact-layout {
+        grid-template-columns: 1fr;
+        gap: 45px;
+      }
+
+      .project-card {
+        grid-template-columns: 1fr;
+      }
+
+      .project-visual {
+        min-height: 250px;
+        border-left: none;
+        border-top: 1px solid rgba(255, 255, 255, 0.08);
+      }
+
+      .award-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .hero-scroll {
+        display: none;
+      }
+    }
+
+    @media (max-width: 650px) {
+      .container {
+        width: min(var(--container), calc(100% - 28px));
+      }
+
+      .section {
+        padding: 75px 0;
+      }
+
+      .section-heading {
+        margin-bottom: 38px;
+      }
+
+      .brand-mark {
+        width: 38px;
+        height: 38px;
+      }
+
+      .brand-name {
+        font-size: 0.91rem;
+      }
+
+      .brand-tagline {
+        font-size: 0.53rem;
+      }
+
+      .hero-content {
+        padding-top: 80px;
+      }
+
+      .hero h1 {
+        font-size: clamp(2.7rem, 14vw, 4.2rem);
+      }
+
+      .hero-text {
+        font-size: 0.94rem;
+      }
+
+      .hero-buttons {
+        display: grid;
+        grid-template-columns: 1fr;
+      }
+
+      .hero-buttons .btn {
+        width: 100%;
+      }
+
+      .services-grid,
+      .service-detail-grid,
+      .document-grid,
+      .activity-layout,
+      .vm-grid,
+      .award-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .highlight-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .highlight-item {
+        border-right: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      }
+
+      .highlight-item:last-child {
+        border-bottom: none;
+      }
+
+      .document-image {
+        height: 260px;
+      }
+
+      .info-row {
+        grid-template-columns: 1fr;
+        gap: 3px;
+      }
+
+      .activity-card,
+      .vm-card,
+      .project-main,
+      .contact-form-wrap {
+        padding: 26px;
+      }
+
+      .projects-tabs {
+        width: 100%;
+        overflow-x: auto;
+      }
+
+      .project-tab {
+        flex: 1 0 max-content;
+        padding-inline: 14px;
+      }
+
+      .project-visual {
+        padding: 20px;
+      }
+
+      .gallery-grid {
+        columns: 2 140px;
+        column-gap: 9px;
+      }
+
+      .gallery-item {
+        margin-bottom: 9px;
+        border-radius: 8px;
+      }
+
+      .gallery-overlay {
+        display: none;
+      }
+
+      .form-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .form-group.full {
+        grid-column: auto;
+      }
+
+      .map-card {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .map-card .btn {
+        width: 100%;
+      }
+
+      .footer-main {
+        grid-template-columns: 1fr;
+        gap: 35px;
+      }
+
+      .footer-brand {
+        grid-column: auto;
+      }
+
+      .footer-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .lightbox {
+        padding: 18px;
+      }
+
+      .lightbox-prev,
+      .lightbox-next {
+        width: 40px;
+        height: 40px;
+      }
+
+      .lightbox-prev {
+        left: 10px;
+      }
+
+      .lightbox-next {
+        right: 10px;
+      }
+
+      .lightbox-close {
+        top: 12px;
+        right: 12px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      *,
+      *::before,
+      *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+
+      .reveal {
+        opacity: 1;
+        transform: none;
+      }
+    }
+  </style>
 </head>
+
 <body>
 
-<div id="loader"><div class="loader-mark">SHREE HIMAL GROUP<div class="loader-bar"></div></div></div>
-<div id="scroll-progress"></div>
-<div id="cursor-glow"></div>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-<header id="site-header">
-  <div class="container nav-wrap">
-    <a href="#hero" class="brand" aria-label="Shree Himal Group Byawasaya Udhyog home">
-      <span class="brand-main">SHREE HIMAL GROUP</span>
-      <span class="brand-sub">BYAWASAYA UDHYOG</span>
-    </a>
-    <nav class="primary-nav" aria-label="Primary navigation">
-      <ul>
-        <li><a href="#hero" data-nav>Home</a></li>
-        <li><a href="#who" data-nav>Who We Are</a></li>
-        <li><a href="#services" data-nav>What We Do</a></li>
-        <li><a href="#projects" data-nav>Projects</a></li>
-        <li><a href="#awards" data-nav>Awards &amp; Achievements</a></li>
-        <li><a href="#gallery" data-nav>Gallery</a></li>
-        <li><a href="#contact" data-nav>Contact</a></li>
-      </ul>
-    </nav>
-    <div class="nav-cta">
-      <a href="#contact" class="btn btn-outline" style="padding:12px 22px;">Get In Touch</a>
-      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">
-        <span></span>
+  <!-- =========================================================
+       HEADER
+       ========================================================= -->
+  <header class="header" id="header">
+    <div class="container nav-container">
+
+      <a href="#home" class="brand" aria-label="Shree Himal Group home">
+        <div class="brand-mark" aria-hidden="true">SH</div>
+
+        <div>
+          <span class="brand-name">SHREE HIMAL GROUP</span>
+          <span class="brand-tagline">Construction • Infrastructure • Material Supply</span>
+        </div>
+      </a>
+
+      <button
+        class="mobile-toggle"
+        id="mobileToggle"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+        aria-controls="mainNavigation"
+      >
+        <span class="hamburger" aria-hidden="true">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
       </button>
+
+      <nav class="nav-links" id="mainNavigation" aria-label="Main navigation">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#achievements" class="nav-link">Achievements</a>
+        <a href="#gallery" class="nav-link">Gallery</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
     </div>
-  </div>
-</header>
+  </header>
 
-<div class="mobile-nav" id="mobile-nav">
-  <ul>
-    <li><a href="#hero" data-nav-mobile>Home</a></li>
-    <li><a href="#who" data-nav-mobile>Who We Are</a></li>
-    <li><a href="#services" data-nav-mobile>What We Do</a></li>
-    <li><a href="#projects" data-nav-mobile>Projects</a></li>
-    <li><a href="#awards" data-nav-mobile>Awards &amp; Achievements</a></li>
-    <li><a href="#gallery" data-nav-mobile>Gallery</a></li>
-    <li><a href="#contact" data-nav-mobile>Contact</a></li>
-  </ul>
-  <div class="mobile-nav-foot">
-    <a href="tel:9857030399" class="btn btn-outline"><i class="fa-solid fa-phone"></i> Call</a>
-    <a href="https://wa.me/9779857030399" target="_blank" rel="noopener" class="btn btn-primary"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
-  </div>
-</div>
 
-<main>
+  <main id="main">
 
-<section id="hero">
-  <div class="hero-bg">
-    <div class="fallback"></div>
-    <img src="images/bck.jpg" alt="Shree Himal Group Byawasaya Udhyog construction and infrastructure work" onerror="this.style.display='none'" loading="eager">
-  </div>
-  <div class="grid-lines dark-grid"></div>
-  <div class="grain"></div>
-  <div class="hero-particles" id="hero-particles"></div>
-  <div class="container hero-content">
-    <div class="hero-label"><span class="dot"></span> SHREE HIMAL GROUP BYAWASAYA UDHYOG</div>
-    <h1>
-      <span class="line"><span>BUILDING INFRASTRUCTURE.</span></span>
-      <span class="line"><span>CREATING PROGRESS.</span></span>
-    </h1>
-    <p class="lead">Shree Himal Group Byawasaya Udhyog is engaged in construction and infrastructure development, undertaking practical works that support connectivity, community development and essential local infrastructure across Nepal.</p>
-    <div class="hero-actions">
-      <a href="#projects" class="btn btn-primary">Explore Our Projects <i class="fa-solid fa-arrow-right"></i></a>
-      <a href="#contact" class="btn btn-outline">Contact Us</a>
-    </div>
-  </div>
-  <div class="scroll-cue"><span>Scroll</span><div class="track"></div></div>
-</section>
+    <!-- =======================================================
+         HOME
+         ======================================================= -->
+    <section class="hero" id="home" aria-label="Shree Himal Group introduction">
 
-<section id="intro">
-  <div class="glow-orb" style="width:360px;height:360px;background:var(--violet);top:-120px;left:-140px;opacity:.06;"></div>
-  <div class="container intro-grid">
-    <div class="intro-text reveal">
-      <div class="eyebrow">Company Overview</div>
-      <h2 class="section-title">Infrastructure That Serves Communities</h2>
-      <p>Shree Himal Group Byawasaya Udhyog is a Nepal-based construction and infrastructure business focused on construction works that contribute to connectivity, local development, community facilities and built infrastructure.</p>
-      <p>The company undertakes construction activities including roads, bridges, nala and drainage works, culverts, housing and other local infrastructure development works.</p>
-      <p>The company approaches each assignment with attention to practical execution, site requirements, workmanship, coordination and completion of the required construction work.</p>
-      <div class="intro-stats">
-        <div class="stat-item"><div class="stat-title">Roads &amp; Bridges</div><div class="stat-label">Connectivity Works</div></div>
-        <div class="stat-item"><div class="stat-title">Drainage &amp; Culverts</div><div class="stat-label">Water Management</div></div>
-        <div class="stat-item"><div class="stat-title">Housing &amp; Local Infrastructure</div><div class="stat-label">Community Development</div></div>
-      </div>
-    </div>
-    <div class="intro-panel reveal">
-      <div class="panel-grid"></div>
-      <div class="panel-glow"></div>
-      <div class="panel-frame"></div>
-      <div class="panel-mark">
-        <div class="num">Rupandehi, Nepal</div>
-        <h4>Sainamaina-03, Murgiya</h4>
-      </div>
-    </div>
-  </div>
-</section>
+      <img
+        class="hero-image"
+        src="home.png"
+        alt="Shree Himal Group construction and infrastructure visual"
+        fetchpriority="high"
+      >
 
-<section id="who">
-  <div class="container who-grid">
-    <div class="reveal">
-      <div class="eyebrow">Who We Are</div>
-      <h2 class="section-title" style="font-size:clamp(1.65rem,3.2vw,2.3rem);">A Nepal-based construction and infrastructure company</h2>
-      <p class="section-desc">Shree Himal Group Byawasaya Udhyog operates in the construction and infrastructure sector, undertaking works that support the development and connectivity needs of local communities across Nepal.</p>
-    </div>
-    <ul class="who-list reveal-stagger">
-      <li class="reveal"><i class="fa-solid fa-road"></i><p><strong>Sector of Operation.</strong> The company works within the construction and infrastructure development sector, engaging in road, bridge, drainage, culvert, housing and local infrastructure works.</p></li>
-      <li class="reveal"><i class="fa-solid fa-location-dot"></i><p><strong>Focus on Local Infrastructure.</strong> A core part of the company's work is directed toward local infrastructure that supports community access, mobility and everyday functionality.</p></li>
-      <li class="reveal"><i class="fa-solid fa-gears"></i><p><strong>Practical Execution.</strong> Each assignment is approached with attention to site conditions, workmanship and the practical requirements needed to complete construction work as assigned.</p></li>
-      <li class="reveal"><i class="fa-solid fa-people-group"></i><p><strong>Supporting Connectivity &amp; Development.</strong> Through its construction activities, the company contributes to improved connectivity between communities, settlements and essential destinations.</p></li>
-      <li class="reveal"><i class="fa-solid fa-shield-halved"></i><p><strong>Responsible Project Execution.</strong> The company maintains a focus on coordination, site requirements and responsible completion of the construction works it undertakes.</p></li>
-    </ul>
-  </div>
-</section>
+      <div class="hero-overlay"></div>
 
-<section id="leadership">
-  <div class="container">
-    <div class="eyebrow reveal">Leadership</div>
-    <div class="leader-card reveal" style="margin-top:30px;">
-      <div class="leader-photo">
-        <div class="leader-photo-inner">
-          <div class="fallback-initial">SP</div>
-          <img src="images/sushil.jpg" alt="Sushil Poudel, Company Board Head of Shree Himal Group Byawasaya Udhyog" loading="lazy" onerror="this.style.display='none'">
+      <div class="container">
+        <div class="hero-content reveal">
+
+          <div class="hero-kicker">
+            Registered Business • Nepal
+          </div>
+
+          <h1>
+            Building Infrastructure.<br>
+            <span>Supporting Progress.</span>
+          </h1>
+
+          <p class="hero-text">
+            Construction, infrastructure development and dependable material
+            and equipment support from a business rooted in Arghakhanchi and
+            operating in Murgiya, Rupandehi.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#services" class="btn btn-primary">
+              Explore Our Services
+              <span aria-hidden="true">→</span>
+            </a>
+
+            <a href="#contact" class="btn btn-outline">
+              Contact Us
+            </a>
+
+            <a href="#projects" class="btn btn-outline">
+              View Projects
+            </a>
+          </div>
+
         </div>
       </div>
-      <div class="leader-copy">
-        <h3 class="leader-name">Sushil Poudel</h3>
-        <div class="leader-role">Company Board Head</div>
-        <p>Sushil Poudel provides leadership and direction for the company, supporting responsible construction practices, project execution, organizational development and the company's continued focus on infrastructure and construction works.</p>
+
+      <div class="hero-scroll" aria-hidden="true">
+        Explore
       </div>
-    </div>
-  </div>
-</section>
 
-<section id="services">
-  <div class="container">
-    <div class="eyebrow reveal">What We Do</div>
-    <h2 class="section-title reveal">Construction &amp; infrastructure works we undertake</h2>
-    <p class="section-desc reveal">Shree Himal Group Byawasaya Udhyog engages in the following core areas of construction and infrastructure development.</p>
-    <div class="services-grid reveal-stagger">
-      <div class="service-card reveal"><span class="service-num">01</span><div class="service-icon"><i class="fa-solid fa-road-circle-check"></i></div><h3>Road Construction</h3><p>Road construction and development works that support local mobility and connectivity between communities, settlements and important destinations. The work may include construction activities required for practical road development according to project requirements and site conditions.</p></div>
-      <div class="service-card reveal"><span class="service-num">02</span><div class="service-icon"><i class="fa-solid fa-archway"></i></div><h3>Bridge Construction</h3><p>Bridge and crossing construction works designed to support movement across natural and constructed barriers. The company undertakes construction activities according to the requirements of the assigned infrastructure project and site conditions.</p></div>
-      <div class="service-card reveal"><span class="service-num">03</span><div class="service-icon"><i class="fa-solid fa-water"></i></div><h3>Nala &amp; Drainage</h3><p>Nala and drainage construction works supporting controlled water flow, drainage management and protection of surrounding roads and infrastructure. Proper drainage is an important part of maintaining functional and resilient local infrastructure.</p></div>
-      <div class="service-card reveal"><span class="service-num">04</span><div class="service-icon"><i class="fa-solid fa-water-ladder"></i></div><h3>Culvert Construction</h3><p>Culvert construction works designed to provide safe passage for water beneath roads and other infrastructure. Culverts support road continuity while helping manage natural water flow around construction areas.</p></div>
-      <div class="service-card reveal"><span class="service-num">05</span><div class="service-icon"><i class="fa-solid fa-house-chimney"></i></div><h3>Housing Construction</h3><p>Housing and building construction works focused on functional spaces, practical construction requirements, workmanship and appropriate execution according to project needs.</p></div>
-      <div class="service-card reveal"><span class="service-num">06</span><div class="service-icon"><i class="fa-solid fa-city"></i></div><h3>Local Infrastructure Development</h3><p>Construction and infrastructure works supporting local development programs, municipalities, rural municipalities and community infrastructure. Such works can contribute to improved accessibility, facilities and public infrastructure.</p></div>
-    </div>
-  </div>
-</section>
+    </section>
 
-<section id="projects">
-  <div class="container">
-    <div class="eyebrow reveal">Our Projects</div>
-    <h2 class="section-title reveal">Selected Infrastructure Works</h2>
-    <div class="projects-list reveal-stagger">
 
-      <article class="project-card reveal" data-modal-target="project-modal-1">
-        <div class="project-media">
-          <div class="fallback"><i class="fa-solid fa-building-shield"></i></div>
-          <img src="images/project1.jpg" alt="Infrastructure development project at Rainadevi Rural Municipality" loading="lazy" onerror="this.style.display='none'">
+    <!-- =======================================================
+         WHAT WE DO
+         ======================================================= -->
+    <section class="section section-light" id="what-we-do">
+
+      <div class="container">
+
+        <div class="section-heading reveal">
+          <div class="eyebrow">Our Work</div>
+          <h2>What We Do</h2>
+          <p>
+            Shree Himal Group provides construction, infrastructure and
+            practical project support services, together with construction
+            material and equipment accessory supply.
+          </p>
+          <div class="accent-line"></div>
         </div>
-        <span class="project-meta-top"><span class="project-num">01</span><span class="project-cat">Local Infrastructure Development</span></span>
-        <div class="project-info">
+
+        <div class="services-grid">
+
+          <article class="service-card reveal">
+            <div class="service-icon">
+              <!-- Bridge icon -->
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"
+                   stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M3 19h18"/>
+                <path d="M5 19v-6"/>
+                <path d="M19 19v-6"/>
+                <path d="M5 13c2.5-5 11.5-5 14 0"/>
+                <path d="M9 19v-3"/>
+                <path d="M15 19v-3"/>
+              </svg>
+            </div>
+            <h3>Bridge Construction</h3>
+            <p>
+              Construction support for bridge and related infrastructure
+              requirements.
+            </p>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="service-icon">
+              <!-- Building icon -->
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"
+                   stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M4 21V4l8-2 8 2v17"/>
+                <path d="M8 7h2"/>
+                <path d="M14 7h2"/>
+                <path d="M8 11h2"/>
+                <path d="M14 11h2"/>
+                <path d="M9 21v-5h6v5"/>
+              </svg>
+            </div>
+            <h3>Building Construction</h3>
+            <p>
+              Residential and building construction work with a practical
+              focus on project requirements.
+            </p>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="service-icon">
+              <!-- Road icon -->
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"
+                   stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M9 3 6 21"/>
+                <path d="M15 3l3 18"/>
+                <path d="M12 4v3"/>
+                <path d="M12 11v3"/>
+                <path d="M12 18v2"/>
+              </svg>
+            </div>
+            <h3>Road Construction</h3>
+            <p>
+              Road and access infrastructure construction supporting local
+              development needs.
+            </p>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="service-icon">
+              <!-- Drainage icon -->
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"
+                   stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M3 6h18"/>
+                <path d="M3 12h18"/>
+                <path d="M3 18h18"/>
+                <path d="M6 3v18"/>
+                <path d="M12 3v18"/>
+                <path d="M18 3v18"/>
+              </svg>
+            </div>
+            <h3>Nala & Drainage</h3>
+            <p>
+              Nala, drainage and related infrastructure construction work.
+            </p>
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =======================================================
+         HIGHLIGHTS
+         ======================================================= -->
+    <section class="highlights" aria-label="Business highlights">
+
+      <div class="container">
+        <div class="highlight-grid">
+
+          <div class="highlight-item reveal">
+            <span class="highlight-label">Registered Business</span>
+            <span class="highlight-value">Registration: 2064/05/05</span>
+          </div>
+
+          <div class="highlight-item reveal">
+            <span class="highlight-label">Registered Origin</span>
+            <span class="highlight-value">Sandhikharka-05, Arghakhanchi</span>
+          </div>
+
+          <div class="highlight-item reveal">
+            <span class="highlight-label">Current Operations</span>
+            <span class="highlight-value">Sainamaina-04, Murgiya</span>
+            <span class="highlight-sub">Rupandehi, Nepal</span>
+          </div>
+
+          <div class="highlight-item reveal">
+            <span class="highlight-label">Proprietor</span>
+            <span class="highlight-value">Sushil Poudel</span>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+
+    <!-- =======================================================
+         DOCUMENTS
+         ======================================================= -->
+    <section class="section section-soft documents" aria-labelledby="documents-title">
+
+      <div class="container">
+
+        <div class="section-heading reveal">
+          <div class="eyebrow">Documentation</div>
+          <h2 id="documents-title">Business Registration & Documentation</h2>
+          <p>
+            Official business documentation is presented here for reference.
+            Click a document to view it in a larger format.
+          </p>
+          <div class="accent-line"></div>
+        </div>
+
+        <div class="document-grid">
+
+          <article
+            class="document-card lightbox-trigger reveal"
+            data-image="pan.jpeg"
+            data-caption="PAN Registration Document"
+            tabindex="0"
+            role="button"
+            aria-label="View PAN registration document"
+          >
+            <div class="document-image">
+              <img
+                src="pan.jpeg"
+                alt="Shree Himal Group PAN registration document"
+                loading="lazy"
+              >
+            </div>
+            <div class="document-info">
+              <h3>PAN Registration</h3>
+              <p>Click to view document</p>
+            </div>
+          </article>
+
+          <article
+            class="document-card lightbox-trigger reveal"
+            data-image="darta.jpeg"
+            data-caption="Business Registration Document"
+            tabindex="0"
+            role="button"
+            aria-label="View business registration document"
+          >
+            <div class="document-image">
+              <img
+                src="darta.jpeg"
+                alt="Shree Himal Group business registration document"
+                loading="lazy"
+              >
+            </div>
+            <div class="document-info">
+              <h3>Business Registration</h3>
+              <p>Click to view document</p>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =======================================================
+         ABOUT
+         ======================================================= -->
+    <section class="section section-light" id="about" aria-labelledby="about-title">
+
+      <div class="container">
+
+        <div class="about-layout">
+
+          <div class="about-copy reveal">
+
+            <div class="section-heading">
+              <div class="eyebrow">Our Background</div>
+              <h2 id="about-title">About Shree Himal Group</h2>
+
+              <div class="accent-line"></div>
+            </div>
+
+            <p>
+              Shree Himal Group began its business journey with its registered
+              roots in Sandhikharka-05, Arghakhanchi. The business has continued
+              to develop its activities around construction, infrastructure
+              support, material supply and practical project services.
+            </p>
+
+            <p>
+              From its registered origin in Arghakhanchi, the business has
+              developed its operations over time and currently operates from
+              Murgiya, Sainamaina-04, Rupandehi, supporting construction and
+              infrastructure requirements in the surrounding area.
+            </p>
+
+            <p>
+              The business maintains a practical approach to construction
+              services, construction material supply and equipment-related
+              support, with an emphasis on dependable service and responsible
+              business practices.
+            </p>
+
+            <div class="info-list">
+
+              <div class="info-row">
+                <strong>Business Name</strong>
+                <span>Shree Himal Group</span>
+              </div>
+
+              <div class="info-row">
+                <strong>Business Type</strong>
+                <span>Nibandhit Byawasaya Udhyog / Registered Business</span>
+              </div>
+
+              <div class="info-row">
+                <strong>PAN</strong>
+                <span>602551100</span>
+              </div>
+
+              <div class="info-row">
+                <strong>Proprietor</strong>
+                <span>Sushil Poudel</span>
+              </div>
+
+              <div class="info-row">
+                <strong>Registered Address</strong>
+                <span>Sandhikharka-05, Arghakhanchi, Nepal</span>
+              </div>
+
+              <div class="info-row">
+                <strong>Operating Location</strong>
+                <span>Sainamaina-04, Murgiya, Rupandehi, Nepal</span>
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <div class="reveal">
+
+            <div class="eyebrow">Our Story</div>
+
+            <div class="timeline">
+
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <span class="timeline-date">2064/05/05</span>
+                <h3>Business Registration</h3>
+                <p>
+                  Shree Himal Group was registered with its business roots in
+                  Sandhikharka-05, Arghakhanchi.
+                </p>
+              </div>
+
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <span class="timeline-date">2077/09/13</span>
+                <h3>Firm Authenticity</h3>
+                <p>
+                  The firm authenticity date was recorded on 2077/09/13.
+                </p>
+              </div>
+
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <span class="timeline-date">PRESENT</span>
+                <h3>Operations in Murgiya</h3>
+                <p>
+                  The business currently operates from Murgiya,
+                  Sainamaina-04, Rupandehi.
+                </p>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- BUSINESS ACTIVITIES -->
+        <div class="activity-layout">
+
+          <article class="activity-card reveal">
+            <div class="activity-number">01 / MATERIAL SUPPLY</div>
+
+            <h3>Construction Material Supply</h3>
+
+            <p>
+              Shree Himal Group is also involved in supplying construction
+              related materials to support local construction and
+              infrastructure requirements.
+            </p>
+
+            <div class="pill-list">
+              <span class="pill">Gitti</span>
+              <span class="pill">Baluwa</span>
+              <span class="pill">Mixcut</span>
+              <span class="pill">Construction Materials</span>
+            </div>
+          </article>
+
+
+          <article class="activity-card reveal">
+            <div class="activity-number">02 / EQUIPMENT SUPPORT</div>
+
+            <h3>Equipment & Machinery Support</h3>
+
+            <p>
+              To make project operations more convenient, Shree Himal Group
+              also supports equipment-related requirements by supplying
+              accessories and necessary items for tipper, excavator and
+              dozer operations.
+            </p>
+
+            <div class="pill-list">
+              <span class="pill">Tipper Accessories</span>
+              <span class="pill">Excavator Accessories</span>
+              <span class="pill">Dozer Accessories</span>
+              <span class="pill">Related Requirements</span>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =======================================================
+         VISION / MISSION
+         ======================================================= -->
+    <section class="section section-dark" aria-labelledby="vision-title">
+
+      <div class="container">
+
+        <div class="section-heading center reveal">
+          <div class="eyebrow">Direction</div>
+          <h2 id="vision-title">Vision & Mission</h2>
+          <p>
+            A practical commitment to dependable work, responsible business
+            practices and long-term trust.
+          </p>
+          <div class="accent-line"></div>
+        </div>
+
+        <div class="vm-grid">
+
+          <article class="vm-card reveal">
+
+            <div class="vm-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"
+                   stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="3"/>
+                <path d="M2.5 12s3.5-6 9.5-6 9.5 6 9.5 6-3.5 6-9.5 6-9.5-6-9.5-6z"/>
+              </svg>
+            </div>
+
+            <h3>Vision</h3>
+
+            <p>
+              To contribute to dependable infrastructure development by
+              building long-term trust through quality work, responsible
+              business practices and practical construction support.
+            </p>
+
+          </article>
+
+
+          <article class="vm-card reveal">
+
+            <div class="vm-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"
+                   stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M12 3v18"/>
+                <path d="M3 12h18"/>
+                <path d="M5 5l14 14"/>
+                <path d="M19 5 5 19"/>
+              </svg>
+            </div>
+
+            <h3>Mission</h3>
+
+            <p>
+              To provide reliable construction services, infrastructure
+              support, materials and equipment-related supplies while
+              maintaining professionalism, transparency, safety and customer
+              satisfaction.
+            </p>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =======================================================
+         SERVICES
+         ======================================================= -->
+    <section class="section section-dark" id="services" aria-labelledby="services-title">
+
+      <div class="container">
+
+        <div class="section-heading reveal">
+          <div class="eyebrow">Services</div>
+          <h2 id="services-title">Practical Construction Support</h2>
+          <p>
+            Services and supplies are focused on practical construction,
+            infrastructure and equipment-related requirements.
+          </p>
+          <div class="accent-line"></div>
+        </div>
+
+
+        <div class="service-detail-grid">
+
+          <article class="service-detail reveal">
+
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"
+                   stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M4 21V4l8-2 8 2v17"/>
+                <path d="M8 7h2"/>
+                <path d="M14 7h2"/>
+                <path d="M8 11h2"/>
+                <path d="M14 11h2"/>
+                <path d="M9 21v-5h6v5"/>
+              </svg>
+            </div>
+
+            <h3>Construction</h3>
+
+            <p>
+              Construction and infrastructure work for practical project
+              requirements.
+            </p>
+
+            <ul>
+              <li>Bridge construction</li>
+              <li>Road construction</li>
+              <li>Building / home construction</li>
+              <li>Nala / drainage construction</li>
+              <li>Other infrastructure construction work</li>
+            </ul>
+
+          </article>
+
+
+          <article class="service-detail reveal">
+
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"
+                   stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M4 7h16"/>
+                <path d="M4 12h16"/>
+                <path d="M4 17h16"/>
+                <path d="M7 4v16"/>
+                <path d="M12 4v16"/>
+                <path d="M17 4v16"/>
+              </svg>
+            </div>
+
+            <h3>Material Supply</h3>
+
+            <p>
+              Construction-related materials supplied to support local
+              construction and infrastructure requirements.
+            </p>
+
+            <ul>
+              <li>Gitti</li>
+              <li>Baluwa</li>
+              <li>Mixcut</li>
+              <li>Other construction-related materials</li>
+            </ul>
+
+          </article>
+
+
+          <article class="service-detail reveal">
+
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"
+                   stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M3 18h18"/>
+                <path d="M5 18v-5h6v5"/>
+                <path d="M11 13l3-5h5l2 5"/>
+                <circle cx="8" cy="19" r="2"/>
+                <circle cx="18" cy="19" r="2"/>
+              </svg>
+            </div>
+
+            <h3>Equipment Accessory Supply</h3>
+
+            <p>
+              Practical accessory and related supply support for construction
+              equipment operations.
+            </p>
+
+            <ul>
+              <li>Tipper accessories</li>
+              <li>Excavator accessories</li>
+              <li>Dozer accessories</li>
+              <li>Related equipment requirements</li>
+            </ul>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =======================================================
+         PROJECTS
+         ======================================================= -->
+    <section class="section section-soft" id="projects" aria-labelledby="projects-title">
+
+      <div class="container">
+
+        <div class="section-heading reveal">
+          <div class="eyebrow">Projects</div>
+          <h2 id="projects-title">Project References</h2>
+          <p>
+            Selected project references associated with Shree Himal Group.
+            Project details are presented without adding unsupported technical,
+            financial or contractual information.
+          </p>
+          <div class="accent-line"></div>
+        </div>
+
+
+        <!-- Exactly two project tabs -->
+        <div
+          class="projects-tabs reveal"
+          role="tablist"
+          aria-label="Project references"
+        >
+
+          <button
+            class="project-tab active"
+            role="tab"
+            aria-selected="true"
+            aria-controls="project-1"
+            data-project="project-1"
+          >
+            Rainadevi Rural Municipality
+          </button>
+
+          <button
+            class="project-tab"
+            role="tab"
+            aria-selected="false"
+            aria-controls="project-2"
+            data-project="project-2"
+          >
+            Sangh Sthaniya Purvadhar Bikash Aayojana
+          </button>
+
+        </div>
+
+
+        <!-- Project 1 -->
+        <div
+          class="project-panel active"
+          id="project-1"
+          role="tabpanel"
+        >
+
+          <article class="project-card">
+
+            <div class="project-main">
+
+              <div class="project-number">PROJECT REFERENCE 01</div>
+
+              <h3>Rainadevi Rural Municipality</h3>
+
+              <p>
+                A project reference associated with Rainadevi Rural
+                Municipality. This space can be expanded with additional
+                verified project information when specific details and
+                photographs are available.
+              </p>
+
+              <div class="project-meta">
+                <span>Construction / Infrastructure</span>
+                <span>Local Government</span>
+              </div>
+
+            </div>
+
+            <div class="project-visual">
+              <div class="project-placeholder">
+                Project Image — Add verified project image here
+              </div>
+            </div>
+
+          </article>
+
+        </div>
+
+
+        <!-- Project 2 -->
+        <div
+          class="project-panel"
+          id="project-2"
+          role="tabpanel"
+        >
+
+          <article class="project-card">
+
+            <div class="project-main">
+
+              <div class="project-number">PROJECT REFERENCE 02</div>
+
+              <h3>Sangh Sthaniya Purvadhar Bikash Aayojana</h3>
+
+              <p>
+                A project reference associated with Sangh Sthaniya
+                Purvadhar Bikash Aayojana. Additional verified information
+                and project photography can be added here when available.
+              </p>
+
+              <div class="project-meta">
+                <span>Infrastructure</span>
+                <span>Development Project</span>
+              </div>
+
+            </div>
+
+            <div class="project-visual">
+              <div class="project-placeholder">
+                Project Image — Add verified project image here
+              </div>
+            </div>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =======================================================
+         ACHIEVEMENTS
+         ======================================================= -->
+    <section class="section section-dark" id="achievements" aria-labelledby="achievements-title">
+
+      <div class="container">
+
+        <div class="section-heading center reveal">
+          <div class="eyebrow">Recognition</div>
+          <h2 id="achievements-title">Rewards & Achievements</h2>
+          <div class="accent-line"></div>
+        </div>
+
+        <p class="achievement-intro reveal">
+          Over the course of its work, Shree Himal Group has received
+          recognition and appreciation from different local bodies and
+          municipalities. These acknowledgements reflect the importance of
+          dependable service, cooperation and responsible project execution.
+        </p>
+
+
+        <div class="award-grid">
+
+          <!--
+            AWARD PLACEHOLDER 1
+
+            TO ADD AN ACTUAL AWARD IMAGE:
+            Replace the entire .award-placeholder block with:
+
+            <div class="award-placeholder">
+              <img src="award1.jpeg"
+                   alt="Description of the actual award">
+            </div>
+
+            Keep the filename in the same GitHub repository directory.
+          -->
+
+          <div class="award-placeholder reveal">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"
+                 stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M8 21h8"/>
+              <path d="M12 17v4"/>
+              <path d="M7 4h10v6a5 5 0 0 1-10 0V4z"/>
+              <path d="M7 6H4v2a4 4 0 0 0 4 4"/>
+              <path d="M17 6h3v2a4 4 0 0 1-4 4"/>
+            </svg>
+            <strong>Award / Recognition Image</strong>
+            <span>Replace this placeholder with the actual image.</span>
+          </div>
+
+
+          <!--
+            AWARD PLACEHOLDER 2
+
+            Add another real award image here when available.
+          -->
+
+          <div class="award-placeholder reveal">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"
+                 stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="4" y="4" width="16" height="16" rx="2"/>
+              <path d="M8 15l2.5-3 2 2 2.5-4 2 5"/>
+              <circle cx="9" cy="9" r="1"/>
+            </svg>
+            <strong>Award / Recognition Image</strong>
+            <span>Replace this placeholder with the actual image.</span>
+          </div>
+
+
+          <!--
+            AWARD PLACEHOLDER 3
+
+            Add another real award image here when available.
+          -->
+
+          <div class="award-placeholder reveal">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"
+                 stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M12 3l2.5 5.5L20 9l-4 4 1 5.5-5-2.8-5 2.8 1-5.5-4-4 5.5-.5L12 3z"/>
+            </svg>
+            <strong>Award / Recognition Image</strong>
+            <span>Replace this placeholder with the actual image.</span>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =======================================================
+         GALLERY
+         ======================================================= -->
+    <section class="section section-light" id="gallery" aria-labelledby="gallery-title">
+
+      <div class="container">
+
+        <div class="section-heading reveal">
+          <div class="eyebrow">Gallery</div>
+          <h2 id="gallery-title">Construction & Project Gallery</h2>
+          <p>
+            A visual collection of construction and project-related work.
+            Select an image to view it in full size.
+          </p>
+          <div class="accent-line"></div>
+        </div>
+
+
+        <div class="gallery-grid">
+
+          <div
+            class="gallery-item lightbox-trigger reveal"
+            data-image="cons1.jpeg"
+            data-caption="Shree Himal Group — Project Image 01"
+            tabindex="0"
+            role="button"
+            aria-label="Open construction image 1"
+          >
+            <img src="cons1.jpeg" alt="Shree Himal Group construction project 1" loading="lazy">
+            <div class="gallery-overlay"><span>Project Image 01</span></div>
+          </div>
+
+
+          <div
+            class="gallery-item lightbox-trigger reveal"
+            data-image="cons2.jpeg"
+            data-caption="Shree Himal Group — Project Image 02"
+            tabindex="0"
+            role="button"
+            aria-label="Open construction image 2"
+          >
+            <img src="cons2.jpeg" alt="Shree Himal Group construction project 2" loading="lazy">
+            <div class="gallery-overlay"><span>Project Image 02</span></div>
+          </div>
+
+
+          <div
+            class="gallery-item lightbox-trigger reveal"
+            data-image="cons3.jpeg"
+            data-caption="Shree Himal Group — Project Image 03"
+            tabindex="0"
+            role="button"
+            aria-label="Open construction image 3"
+          >
+            <img src="cons3.jpeg" alt="Shree Himal Group construction project 3" loading="lazy">
+            <div class="gallery-overlay"><span>Project Image 03</span></div>
+          </div>
+
+
+          <div
+            class="gallery-item lightbox-trigger reveal"
+            data-image="cons5.jpeg"
+            data-caption="Shree Himal Group — Project Image 04"
+            tabindex="0"
+            role="button"
+            aria-label="Open construction image 4"
+          >
+            <img src="cons5.jpeg" alt="Shree Himal Group construction project 4" loading="lazy">
+            <div class="gallery-overlay"><span>Project Image 04</span></div>
+          </div>
+
+
+          <div
+            class="gallery-item lightbox-trigger reveal"
+            data-image="cons7.jpeg"
+            data-caption="Shree Himal Group — Project Image 05"
+            tabindex="0"
+            role="button"
+            aria-label="Open construction image 5"
+          >
+            <img src="cons7.jpeg" alt="Shree Himal Group construction project 5" loading="lazy">
+            <div class="gallery-overlay"><span>Project Image 05</span></div>
+          </div>
+
+
+          <div
+            class="gallery-item lightbox-trigger reveal"
+            data-image="cons8.jpeg"
+            data-caption="Shree Himal Group — Project Image 06"
+            tabindex="0"
+            role="button"
+            aria-label="Open construction image 6"
+          >
+            <img src="cons8.jpeg" alt="Shree Himal Group construction project 6" loading="lazy">
+            <div class="gallery-overlay"><span>Project Image 06</span></div>
+          </div>
+
+
+          <div
+            class="gallery-item lightbox-trigger reveal"
+            data-image="cons9.jpeg"
+            data-caption="Shree Himal Group — Project Image 07"
+            tabindex="0"
+            role="button"
+            aria-label="Open construction image 7"
+          >
+            <img src="cons9.jpeg" alt="Shree Himal Group construction project 7" loading="lazy">
+            <div class="gallery-overlay"><span>Project Image 07</span></div>
+          </div>
+
+
+          <div
+            class="gallery-item lightbox-trigger reveal"
+            data-image="cons10.jpeg"
+            data-caption="Shree Himal Group — Project Image 08"
+            tabindex="0"
+            role="button"
+            aria-label="Open construction image 8"
+          >
+            <img src="cons10.jpeg" alt="Shree Himal Group construction project 8" loading="lazy">
+            <div class="gallery-overlay"><span>Project Image 08</span></div>
+          </div>
+
+
+          <div
+            class="gallery-item lightbox-trigger reveal"
+            data-image="cons11.jpeg"
+            data-caption="Shree Himal Group — Project Image 09"
+            tabindex="0"
+            role="button"
+            aria-label="Open construction image 9"
+          >
+            <img src="cons11.jpeg" alt="Shree Himal Group construction project 9" loading="lazy">
+            <div class="gallery-overlay"><span>Project Image 09</span></div>
+          </div>
+
+
+          <div
+            class="gallery-item lightbox-trigger reveal"
+            data-image="cons13.jpeg"
+            data-caption="Shree Himal Group — Project Image 10"
+            tabindex="0"
+            role="button"
+            aria-label="Open construction image 10"
+          >
+            <img src="cons13.jpeg" alt="Shree Himal Group construction project 10" loading="lazy">
+            <div class="gallery-overlay"><span>Project Image 10</span></div>
+          </div>
+
+
+          <div
+            class="gallery-item lightbox-trigger reveal"
+            data-image="cons15.jpeg"
+            data-caption="Shree Himal Group — Project Image 11"
+            tabindex="0"
+            role="button"
+            aria-label="Open construction image 11"
+          >
+            <img src="cons15.jpeg" alt="Shree Himal Group construction project 11" loading="lazy">
+            <div class="gallery-overlay"><span>Project Image 11</span></div>
+          </div>
+
+
+          <div
+            class="gallery-item lightbox-trigger reveal"
+            data-image="cons16.jpeg"
+            data-caption="Shree Himal Group — Project Image 12"
+            tabindex="0"
+            role="button"
+            aria-label="Open construction image 12"
+          >
+            <img src="cons16.jpeg" alt="Shree Himal Group construction project 12" loading="lazy">
+            <div class="gallery-overlay"><span>Project Image 12</span></div>
+          </div>
+
+
+          <div
+            class="gallery-item lightbox-trigger reveal"
+            data-image="cons17.jpeg"
+            data-caption="Shree Himal Group — Project Image 13"
+            tabindex="0"
+            role="button"
+            aria-label="Open construction image 13"
+          >
+            <img src="cons17.jpeg" alt="Shree Himal Group construction project 13" loading="lazy">
+            <div class="gallery-overlay"><span>Project Image 13</span></div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =======================================================
+         CONTACT
+         ======================================================= -->
+    <section class="section section-dark" id="contact" aria-labelledby="contact-title">
+
+      <div class="container">
+
+        <div class="contact-layout">
+
+          <div class="contact-intro reveal">
+
+            <div class="eyebrow">Get In Touch</div>
+
+            <h2 id="contact-title">
+              Let's Work Together
+            </h2>
+
+            <div class="accent-line"></div>
+
+            <p>
+              For construction, infrastructure, material supply or equipment
+              accessory requirements, get in touch with Shree Himal Group.
+            </p>
+
+
+            <div class="contact-details">
+
+              <div class="contact-detail">
+                <div class="contact-detail-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"
+                       stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                    <circle cx="12" cy="7" r="4"/>
+                  </svg>
+                </div>
+                <div>
+                  <small>Proprietor</small>
+                  <span>Sushil Poudel</span>
+                </div>
+              </div>
+
+
+              <div class="contact-detail">
+                <div class="contact-detail-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"
+                       stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M22 16.9v3a2 2 0 0 1-2.2 2
+                             19.8 19.8 0 0 1-8.6-3.1
+                             19.5 19.5 0 0 1-6-6
+                             19.8 19.8 0 0 1-3.1-8.6
+                             A2 2 0 0 1 4.1 2h3
+                             a2 2 0 0 1 2 1.7
+                             c.1 1 .4 2 .7 2.9
+                             a2 2 0 0 1-.5 2.1L8 10
+                             a16 16 0 0 0 6 6l1.3-1.3
+                             a2 2 0 0 1 2.1-.5
+                             c.9.3 1.9.6 2.9.7
+                             A2 2 0 0 1 22 16.9z"/>
+                  </svg>
+                </div>
+                <div>
+                  <small>Phone / WhatsApp</small>
+                  <a href="tel:+9779857030399">9857030399</a>
+                </div>
+              </div>
+
+
+              <div class="contact-detail">
+                <div class="contact-detail-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"
+                       stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <rect x="3" y="5" width="18" height="14" rx="2"/>
+                    <path d="m3 7 9 6 9-6"/>
+                  </svg>
+                </div>
+                <div>
+                  <small>Email</small>
+                  <a href="mailto:shreehimalgroup54@gmail.com">
+                    shreehimalgroup54@gmail.com
+                  </a>
+                </div>
+              </div>
+
+
+              <div class="contact-detail">
+                <div class="contact-detail-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"
+                       stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0z"/>
+                    <circle cx="12" cy="10" r="2.5"/>
+                  </svg>
+                </div>
+                <div>
+                  <small>Registered Address</small>
+                  <span>Sandhikharka-05, Arghakhanchi, Nepal</span>
+                </div>
+              </div>
+
+
+              <div class="contact-detail">
+                <div class="contact-detail-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"
+                       stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M3 21h18"/>
+                    <path d="M5 21V9l7-5 7 5v12"/>
+                    <path d="M9 21v-6h6v6"/>
+                    <path d="M8 11h1"/>
+                    <path d="M15 11h1"/>
+                  </svg>
+                </div>
+                <div>
+                  <small>Operating Location</small>
+                  <span>Sainamaina-04, Murgiya, Rupandehi, Nepal</span>
+                </div>
+              </div>
+
+
+              <div class="contact-detail">
+                <div class="contact-detail-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"
+                       stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M5 4h14v16H5z"/>
+                    <path d="M8 8h8"/>
+                    <path d="M8 12h8"/>
+                    <path d="M8 16h5"/>
+                  </svg>
+                </div>
+                <div>
+                  <small>PAN</small>
+                  <span>602551100</span>
+                </div>
+              </div>
+
+            </div>
+
+
+            <div class="contact-actions">
+
+              <a
+                class="contact-action"
+                href="https://wa.me/9779857030399"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                WhatsApp
+              </a>
+
+              <a
+                class="contact-action"
+                href="tel:+9779857030399"
+              >
+                Call
+              </a>
+
+              <a
+                class="contact-action"
+                href="mailto:shreehimalgroup54@gmail.com"
+              >
+                Email
+              </a>
+
+              <a
+                class="contact-action"
+                href="https://www.facebook.com/share/1HjZ7MRM7q/?mibextid=wwXIfr"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Facebook
+              </a>
+
+            </div>
+
+          </div>
+
+
+          <!-- CONTACT FORM -->
+          <div class="contact-form-wrap reveal">
+
+            <h3>Send an Inquiry</h3>
+
+            <p class="form-note">
+              Submit your requirement and the website will prepare a WhatsApp
+              message for Shree Himal Group.
+            </p>
+
+            <form id="contactForm">
+
+              <div class="form-grid">
+
+                <div class="form-group">
+                  <label for="name">Name *</label>
+                  <input
+                    id="name"
+                    name="name"
+                    type="text"
+                    autocomplete="name"
+                    required
+                    placeholder="Your name"
+                  >
+                </div>
+
+
+                <div class="form-group">
+                  <label for="phone">Phone *</label>
+                  <input
+                    id="phone"
+                    name="phone"
+                    type="tel"
+                    autocomplete="tel"
+                    required
+                    placeholder="Your phone number"
+                  >
+                </div>
+
+
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input
+                    id="email"
+                    name="email"
+                    type="email"
+                    autocomplete="email"
+                    placeholder="Your email address"
+                  >
+                </div>
+
+
+                <div class="form-group">
+                  <label for="service">Service / Requirement *</label>
+
+                  <select id="service" name="service" required>
+                    <option value="">Select a requirement</option>
+                    <option value="Bridge Construction">Bridge Construction</option>
+                    <option value="Road Construction">Road Construction</option>
+                    <option value="Building / Home Construction">Building / Home Construction</option>
+                    <option value="Nala / Drainage Construction">Nala / Drainage Construction</option>
+                    <option value="Construction Material Supply">Construction Material Supply</option>
+                    <option value="Tipper Accessories">Tipper Accessories</option>
+                    <option value="Excavator Accessories">Excavator Accessories</option>
+                    <option value="Dozer Accessories">Dozer Accessories</option>
+                    <option value="Other Requirement">Other Requirement</option>
+                  </select>
+                </div>
+
+
+                <div class="form-group full">
+                  <label for="message">Message *</label>
+
+                  <textarea
+                    id="message"
+                    name="message"
+                    required
+                    placeholder="Tell us about your requirement..."
+                  ></textarea>
+                </div>
+
+              </div>
+
+
+              <button type="submit" class="btn btn-primary form-submit">
+                Send Inquiry on WhatsApp
+                <span aria-hidden="true">→</span>
+              </button>
+
+              <div class="form-status" id="formStatus" role="status">
+                Your WhatsApp message is being prepared.
+              </div>
+
+            </form>
+
+          </div>
+
+        </div>
+
+
+        <!-- GOOGLE MAP -->
+        <div class="map-card reveal">
+
+          <div class="map-info">
+            <h3>Shree Himal Group Location</h3>
+            <p>
+              Sainamaina-04, Murgiya, Rupandehi, Nepal
+              • Coordinates: 27.6867639, 83.3388985
+            </p>
+          </div>
+
+          <a
+            href="https://maps.google.com?q=27.6867639,83.3388985"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-primary"
+          >
+            View Location on Google Maps
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- =========================================================
+       FOOTER
+       ========================================================= -->
+  <footer class="footer">
+
+    <div class="container footer-main">
+
+      <div class="footer-brand">
+
+        <a href="#home" class="brand" aria-label="Shree Himal Group home">
+
+          <div class="brand-mark" aria-hidden="true">SH</div>
+
           <div>
-            <h3>Rainadevi Rural Municipality</h3>
+            <span class="brand-name">SHREE HIMAL GROUP</span>
+            <span class="brand-tagline">Construction • Infrastructure • Material Supply</span>
           </div>
-          <span class="project-view">View Project <i class="fa-solid fa-arrow-right"></i></span>
-        </div>
-      </article>
 
-      <article class="project-card reveal" data-modal-target="project-modal-2">
-        <div class="project-media">
-          <div class="fallback"><i class="fa-solid fa-road-barrier"></i></div>
-          <img src="images/project2.jpg" alt="Sangh Sthaniya Purbadhar Bikas Yojana infrastructure development project" loading="lazy" onerror="this.style.display='none'">
-        </div>
-        <span class="project-meta-top"><span class="project-num">02</span><span class="project-cat">Infrastructure Development</span></span>
-        <div class="project-info">
-          <div>
-            <h3>Sangh Sthaniya Purbadhar Bikas Yojana</h3>
-          </div>
-          <span class="project-view">View Project <i class="fa-solid fa-arrow-right"></i></span>
-        </div>
-      </article>
+        </a>
 
-    </div>
-  </div>
-</section>
+        <p>
+          A registered business rooted in Sandhikharka, Arghakhanchi and
+          currently operating in Murgiya, Sainamaina-04, Rupandehi.
+        </p>
 
-<section id="awards">
-  <div class="container">
-    <div class="eyebrow reveal">Recognition &amp; Achievement</div>
-    <h2 class="section-title reveal">Awards &amp; Achievements</h2>
-    <div class="awards-grid reveal-stagger">
-      <div class="award-card reveal" data-modal-target="award-modal-1">
-        <div class="fallback"><i class="fa-solid fa-award"></i></div>
-        <img src="images/award1.jpg" alt="Recognition and achievement image one" loading="lazy" onerror="this.style.display='none'">
-        <div class="award-caption"><span class="tag">Recognition</span><h4>Recognition &amp; Achievement</h4></div>
-      </div>
-      <div class="award-card reveal" data-modal-target="award-modal-2">
-        <div class="fallback"><i class="fa-solid fa-award"></i></div>
-        <img src="images/award2.jpg" alt="Recognition and achievement image two" loading="lazy" onerror="this.style.display='none'">
-        <div class="award-caption"><span class="tag">Recognition</span><h4>Recognition &amp; Achievement</h4></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="gallery">
-  <div class="container">
-    <div class="eyebrow reveal">Gallery</div>
-    <h2 class="section-title reveal">A visual record of our work</h2>
-    <div class="gallery-grid reveal-stagger" id="gallery-grid"></div>
-  </div>
-</section>
-
-<section id="contact">
-  <div class="container">
-    <div class="contact-head reveal">
-      <div class="eyebrow">Contact</div>
-      <h2 class="section-title">Let's Build Better Infrastructure Together.</h2>
-      <p class="section-desc">For project inquiries, construction-related communication and business correspondence, Shree Himal Group Byawasaya Udhyog can be contacted directly using the information provided below.</p>
-    </div>
-    <div class="contact-grid">
-      <div class="reveal">
-        <div class="contact-cards">
-          <div class="contact-card"><div class="contact-icon"><i class="fa-solid fa-phone"></i></div><div><div class="label">Phone</div><div class="value">9857030399</div></div></div>
-          <div class="contact-card"><div class="contact-icon"><i class="fa-solid fa-envelope"></i></div><div><div class="label">Email</div><div class="value">shreehimalgroup54@gmail.com</div></div></div>
-          <div class="contact-card"><div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div><div><div class="label">Address</div><div class="value">Sainamaina-03, Murgiya, Rupandehi, Nepal</div></div></div>
-          <div class="contact-card"><div class="contact-icon"><i class="fa-solid fa-id-card"></i></div><div><div class="label">PAN</div><div class="value">602551100</div></div></div>
-        </div>
-        <div class="social-row">
-          <a class="social-btn whatsapp" href="https://wa.me/9779857030399" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
-          <a class="social-btn mail" href="mailto:shreehimalgroup54@gmail.com"><i class="fa-solid fa-envelope"></i> Email</a>
-          <a class="social-btn facebook" href="https://www.facebook.com" target="_blank" rel="noopener"><i class="fa-brands fa-facebook-f"></i> Facebook</a>
-        </div>
       </div>
 
-      <div class="form-panel reveal">
-        <form id="inquiry-form" novalidate>
-          <div class="form-row">
-            <div class="field">
-              <label for="f-name">Full Name</label>
-              <input type="text" id="f-name" name="name" required autocomplete="name">
-              <span class="err" id="err-name"></span>
-            </div>
-            <div class="field">
-              <label for="f-phone">Phone Number</label>
-              <input type="tel" id="f-phone" name="phone" required autocomplete="tel">
-              <span class="err" id="err-phone"></span>
-            </div>
-          </div>
-          <div class="form-row">
-            <div class="field full">
-              <label for="f-email">Email</label>
-              <input type="email" id="f-email" name="email" required autocomplete="email">
-              <span class="err" id="err-email"></span>
-            </div>
-          </div>
-          <div class="form-row">
-            <div class="field full">
-              <label for="f-message">Message</label>
-              <textarea id="f-message" name="message" required></textarea>
-              <span class="err" id="err-message"></span>
-            </div>
-          </div>
-          <button type="submit" class="btn btn-primary btn-block">Send Inquiry <i class="fa-solid fa-paper-plane"></i></button>
-          <div class="form-success" id="form-success"><i class="fa-solid fa-circle-check"></i> Your email application should now be open with your inquiry ready to send.</div>
-        </form>
-      </div>
-    </div>
 
-    <div class="map-wrap reveal">
-      <div class="map-frame">
-        <iframe title="Map showing Sainamaina-03, Murgiya, Rupandehi, Nepal" loading="lazy" src="https://www.google.com/maps?q=Sainamaina-03,+Murgiya,+Rupandehi,+Nepal&output=embed" allowfullscreen></iframe>
-      </div>
-      <div class="map-bar">
-        <div><h4>Sainamaina-03, Murgiya</h4><p>Rupandehi, Nepal</p></div>
-        <a class="btn btn-outline" href="https://www.google.com/maps/dir/?api=1&destination=Sainamaina-03,+Murgiya,+Rupandehi,+Nepal" target="_blank" rel="noopener">Get Directions <i class="fa-solid fa-diamond-turn-right"></i></a>
-      </div>
-    </div>
-  </div>
-</section>
-
-</main>
-
-<footer>
-  <div class="grid-lines dark-grid" style="opacity:.4;"></div>
-  <div class="container">
-    <div class="footer-grid">
       <div>
-        <div class="footer-brand-main" style="font-family:'Manrope',sans-serif;font-weight:800;">SHREE HIMAL GROUP</div>
-        <div class="footer-brand-sub">BYAWASAYA UDHYOG</div>
-        <p style="color:var(--dark-muted);font-size:.9rem;max-width:340px;">A Nepal-based construction and infrastructure company undertaking road, bridge, drainage, culvert, housing and local infrastructure development works.</p>
+
+        <h3 class="footer-heading">Quick Links</h3>
+
+        <nav class="footer-links" aria-label="Footer navigation">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#services">Services</a>
+          <a href="#projects">Projects</a>
+          <a href="#achievements">Achievements</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
       </div>
-      <div class="footer-col">
-        <h5>Quick Links</h5>
-        <ul>
-          <li><a href="#hero">Home</a></li>
-          <li><a href="#who">Who We Are</a></li>
-          <li><a href="#services">What We Do</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#awards">Awards &amp; Achievements</a></li>
-          <li><a href="#gallery">Gallery</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
+
+
+      <div>
+
+        <h3 class="footer-heading">Contact</h3>
+
+        <div class="footer-contact">
+
+          <a href="tel:+9779857030399">
+            9857030399
+          </a>
+
+          <a href="mailto:shreehimalgroup54@gmail.com">
+            shreehimalgroup54@gmail.com
+          </a>
+
+          <span>
+            Registered: Sandhikharka-05, Arghakhanchi
+          </span>
+
+          <span>
+            Operating: Sainamaina-04, Murgiya, Rupandehi
+          </span>
+
+          <span>
+            PAN: 602551100
+          </span>
+
+        </div>
+
       </div>
-      <div class="footer-col">
-        <h5>Contact</h5>
-        <ul class="footer-contact">
-          <li><i class="fa-solid fa-phone"></i> 9857030399</li>
-          <li><i class="fa-solid fa-envelope"></i> shreehimalgroup54@gmail.com</li>
-          <li><i class="fa-solid fa-location-dot"></i> Sainamaina-03, Murgiya, Rupandehi, Nepal</li>
-          <li><i class="fa-solid fa-id-card"></i> PAN: 602551100</li>
-        </ul>
+
+    </div>
+
+
+    <div class="container footer-bottom">
+
+      <p>
+        © 2026 Shree Himal Group. All rights reserved.
+      </p>
+
+      <div class="social-links">
+
+        <a
+          class="social-link"
+          href="https://wa.me/9779857030399"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="WhatsApp"
+          title="WhatsApp"
+        >
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"
+               stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20 11.5a8 8 0 0 1-11.7 7.1L4 20l1.5-4.1A8 8 0 1 1 20 11.5z"/>
+            <path d="M8.5 8.5c.2-.4.4-.4.7-.4h.5c.2 0 .4.1.5.4l.6 1.4c.1.2.1.4-.1.6l-.5.6c.5 1 1.2 1.7 2.2 2.2l.6-.5c.2-.2.4-.2.6-.1l1.4.6c.3.1.4.3.4.5v.5c0 .3-.1.5-.4.7-.4.2-1 .3-1.5.1-2.7-.7-5.1-3.1-5.8-5.8-.2-.5-.1-1.1.1-1.5z"/>
+          </svg>
+        </a>
+
+
+        <a
+          class="social-link"
+          href="https://www.facebook.com/share/1HjZ7MRM7q/?mibextid=wwXIfr"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Facebook"
+          title="Facebook"
+        >
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"
+               stroke-linecap="round" stroke-linejoin="round">
+            <path d="M15 8h3V4h-3c-3 0-5 2-5 5v3H7v4h3v4h4v-4h3l1-4h-4V9c0-.7.3-1 1-1z"/>
+          </svg>
+        </a>
+
+
+        <a
+          class="social-link"
+          href="mailto:shreehimalgroup54@gmail.com"
+          aria-label="Email"
+          title="Email"
+        >
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"
+               stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="5" width="18" height="14" rx="2"/>
+            <path d="m3 7 9 6 9-6"/>
+          </svg>
+        </a>
+
+
+        <a
+          class="social-link"
+          href="https://maps.google.com?q=27.6867639,83.3388985"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Google Maps"
+          title="Google Maps"
+        >
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"
+               stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0z"/>
+            <circle cx="12" cy="10" r="2.5"/>
+          </svg>
+        </a>
+
       </div>
+
     </div>
-    <div class="footer-bottom">
-      <span>&copy; <span id="year"></span> Shree Himal Group Byawasaya Udhyog. All Rights Reserved.</span>
-      <span>Sainamaina-03, Murgiya, Rupandehi, Nepal</span>
+
+  </footer>
+
+
+  <!-- =========================================================
+       LIGHTBOX
+       ========================================================= -->
+  <div
+    class="lightbox"
+    id="lightbox"
+    role="dialog"
+    aria-modal="true"
+    aria-label="Image viewer"
+    aria-hidden="true"
+  >
+
+    <button
+      class="lightbox-close"
+      id="lightboxClose"
+      aria-label="Close image viewer"
+    >
+      ✕
+    </button>
+
+    <button
+      class="lightbox-prev"
+      id="lightboxPrev"
+      aria-label="Previous image"
+    >
+      ‹
+    </button>
+
+    <div class="lightbox-content">
+      <img
+        class="lightbox-image"
+        id="lightboxImage"
+        src=""
+        alt=""
+      >
     </div>
+
+    <button
+      class="lightbox-next"
+      id="lightboxNext"
+      aria-label="Next image"
+    >
+      ›
+    </button>
+
+    <div class="lightbox-caption" id="lightboxCaption"></div>
+
   </div>
-</footer>
 
-<a href="https://wa.me/9779857030399" target="_blank" rel="noopener" class="float-whatsapp" aria-label="Chat on WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
-<button class="back-top" id="back-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
 
-<!-- Project Modals -->
-<div class="overlay" id="project-modal-1" role="dialog" aria-modal="true" aria-label="Rainadevi Rural Municipality project details">
-  <button class="overlay-close" data-close><i class="fa-solid fa-xmark"></i></button>
-  <div class="project-modal-box">
-    <div class="pm-media">
-      <div class="fallback"><i class="fa-solid fa-building-shield"></i></div>
-      <img src="images/project1.jpg" alt="Rainadevi Rural Municipality infrastructure project" loading="lazy" onerror="this.style.display='none'">
-    </div>
-    <div class="pm-body">
-      <span class="project-cat">Local Infrastructure Development</span>
-      <h3>Rainadevi Rural Municipality</h3>
-      <p>Infrastructure development work associated with Rainadevi Rural Municipality, contributing to local infrastructure and community development.</p>
-    </div>
-  </div>
-</div>
+  <!-- =========================================================
+       BACK TO TOP
+       ========================================================= -->
+  <button
+    class="back-to-top"
+    id="backToTop"
+    aria-label="Back to top"
+    title="Back to top"
+  >
+    ↑
+  </button>
 
-<div class="overlay" id="project-modal-2" role="dialog" aria-modal="true" aria-label="Sangh Sthaniya Purbadhar Bikas Yojana project details">
-  <button class="overlay-close" data-close><i class="fa-solid fa-xmark"></i></button>
-  <div class="project-modal-box">
-    <div class="pm-media">
-      <div class="fallback"><i class="fa-solid fa-road-barrier"></i></div>
-      <img src="images/project2.jpg" alt="Sangh Sthaniya Purbadhar Bikas Yojana infrastructure project" loading="lazy" onerror="this.style.display='none'">
-    </div>
-    <div class="pm-body">
-      <span class="project-cat">Infrastructure Development</span>
-      <h3>Sangh Sthaniya Purbadhar Bikas Yojana</h3>
-      <p>Infrastructure development work undertaken under the Sangh Sthaniya Purbadhar Bikas Yojana, supporting essential local infrastructure and development.</p>
-    </div>
-  </div>
-</div>
 
-<!-- Award Modals -->
-<div class="overlay" id="award-modal-1" role="dialog" aria-modal="true" aria-label="Recognition and achievement image one">
-  <button class="overlay-close" data-close><i class="fa-solid fa-xmark"></i></button>
-  <div class="lightbox-wrap">
-    <div class="lightbox-img-holder">
-      <div class="fallback"><i class="fa-solid fa-award"></i></div>
-      <img src="images/award1.jpg" alt="Recognition and achievement image one" loading="lazy" onerror="this.style.display='none'" onload="this.classList.add('loaded')">
-    </div>
-  </div>
-</div>
-<div class="overlay" id="award-modal-2" role="dialog" aria-modal="true" aria-label="Recognition and achievement image two">
-  <button class="overlay-close" data-close><i class="fa-solid fa-xmark"></i></button>
-  <div class="lightbox-wrap">
-    <div class="lightbox-img-holder">
-      <div class="fallback"><i class="fa-solid fa-award"></i></div>
-      <img src="images/award2.jpg" alt="Recognition and achievement image two" loading="lazy" onerror="this.style.display='none'" onload="this.classList.add('loaded')">
-    </div>
-  </div>
-</div>
+  <!-- =========================================================
+       JAVASCRIPT
+       ========================================================= -->
+  <script>
+    "use strict";
 
-<!-- Gallery Lightbox -->
-<div class="overlay" id="gallery-lightbox" role="dialog" aria-modal="true" aria-label="Gallery image viewer">
-  <button class="overlay-close" data-close><i class="fa-solid fa-xmark"></i></button>
-  <div class="lightbox-wrap">
-    <button class="lb-nav lb-prev" id="lb-prev" aria-label="Previous image"><i class="fa-solid fa-chevron-left"></i></button>
-    <div class="lightbox-img-holder">
-      <div class="fallback"><i class="fa-solid fa-image"></i></div>
-      <img id="lightbox-img" src="" alt="Gallery image" onerror="this.style.display='none'" onload="this.classList.add('loaded')">
-    </div>
-    <button class="lb-nav lb-next" id="lb-next" aria-label="Next image"><i class="fa-solid fa-chevron-right"></i></button>
-    <div class="lb-counter" id="lb-counter">1 / 26</div>
-  </div>
-</div>
+    /* =========================================================
+       MOBILE NAVIGATION
+       ========================================================= */
 
-<script>
-(function(){
-  "use strict";
-  var reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const mobileToggle = document.getElementById("mobileToggle");
+    const mainNavigation = document.getElementById("mainNavigation");
+    const navLinks = document.querySelectorAll(".nav-link");
 
-  /* ---------- Loader ---------- */
-  window.addEventListener('load', function(){
-    var loader = document.getElementById('loader');
-    setTimeout(function(){ loader.classList.add('hide'); }, 400);
-  });
-
-  /* ---------- Year ---------- */
-  document.getElementById('year').textContent = new Date().getFullYear();
-
-  /* ---------- Header scroll state + progress bar ---------- */
-  var header = document.getElementById('site-header');
-  var progress = document.getElementById('scroll-progress');
-  var backTop = document.getElementById('back-top');
-
-  function onScroll(){
-    var scrollTop = window.scrollY || document.documentElement.scrollTop;
-    header.classList.toggle('scrolled', scrollTop > 60);
-    backTop.classList.toggle('show', scrollTop > 700);
-    var docHeight = document.documentElement.scrollHeight - window.innerHeight;
-    var pct = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
-    progress.style.width = pct + '%';
-  }
-  window.addEventListener('scroll', onScroll, { passive:true });
-  onScroll();
-
-  backTop.addEventListener('click', function(){
-    window.scrollTo({ top:0, behavior: reducedMotion ? 'auto' : 'smooth' });
-  });
-
-  /* ---------- Mobile nav ---------- */
-  var hamburger = document.getElementById('hamburger');
-  var mobileNav = document.getElementById('mobile-nav');
-
-  function toggleMenu(open){
-    var isOpen = typeof open === 'boolean' ? open : !mobileNav.classList.contains('open');
-    mobileNav.classList.toggle('open', isOpen);
-    hamburger.classList.toggle('open', isOpen);
-    hamburger.setAttribute('aria-expanded', isOpen);
-    document.body.style.overflow = isOpen ? 'hidden' : '';
-  }
-  hamburger.addEventListener('click', function(){ toggleMenu(); });
-  document.querySelectorAll('[data-nav-mobile]').forEach(function(a){
-    a.addEventListener('click', function(){ toggleMenu(false); });
-  });
-
-  /* ---------- Active nav indicator ---------- */
-  var navLinks = document.querySelectorAll('[data-nav]');
-  var sections = Array.prototype.slice.call(document.querySelectorAll('main section[id]'));
-
-  function updateActiveNav(){
-    var scrollPos = window.scrollY + 140;
-    var current = sections[0] ? sections[0].id : '';
-    sections.forEach(function(sec){
-      if (scrollPos >= sec.offsetTop) current = sec.id;
-    });
-    navLinks.forEach(function(link){
-      var match = link.getAttribute('href') === '#' + current;
-      link.classList.toggle('active', match);
-    });
-  }
-  window.addEventListener('scroll', updateActiveNav, { passive:true });
-  updateActiveNav();
-
-  /* ---------- Scroll reveal ---------- */
-  var revealEls = document.querySelectorAll('.reveal');
-  if ('IntersectionObserver' in window){
-    var io = new IntersectionObserver(function(entries){
-      entries.forEach(function(entry){
-        if (entry.isIntersecting){
-          entry.target.classList.add('in');
-          io.unobserve(entry.target);
-        }
-      });
-    }, { threshold:0.15, rootMargin:'0px 0px -60px 0px' });
-    revealEls.forEach(function(el){ io.observe(el); });
-  } else {
-    revealEls.forEach(function(el){ el.classList.add('in'); });
-  }
-
-  /* ---------- Hero particles ---------- */
-  var particleWrap = document.getElementById('hero-particles');
-  if (particleWrap && !reducedMotion){
-    var count = window.innerWidth < 640 ? 10 : 20;
-    for (var i=0;i<count;i++){
-      var p = document.createElement('span');
-      p.style.left = Math.random()*100 + '%';
-      p.style.bottom = (Math.random()*20) + 'px';
-      p.style.animationDuration = (9 + Math.random()*10) + 's';
-      p.style.animationDelay = (Math.random()*10) + 's';
-      p.style.width = p.style.height = (1.5 + Math.random()*2) + 'px';
-      particleWrap.appendChild(p);
+    function closeMobileMenu() {
+      mainNavigation.classList.remove("open");
+      mobileToggle.classList.remove("open");
+      mobileToggle.setAttribute("aria-expanded", "false");
+      mobileToggle.setAttribute("aria-label", "Open navigation menu");
+      document.body.classList.remove("menu-open");
     }
-  }
 
-  /* ---------- Hero mouse parallax + cursor glow (desktop only) ---------- */
-  var hero = document.getElementById('hero');
-  var heroBg = hero ? hero.querySelector('.hero-bg') : null;
-  var cursorGlow = document.getElementById('cursor-glow');
-  var isDesktop = window.matchMedia('(hover:hover) and (pointer:fine)').matches;
+    function openMobileMenu() {
+      mainNavigation.classList.add("open");
+      mobileToggle.classList.add("open");
+      mobileToggle.setAttribute("aria-expanded", "true");
+      mobileToggle.setAttribute("aria-label", "Close navigation menu");
+      document.body.classList.add("menu-open");
+    }
 
-  if (isDesktop && !reducedMotion){
-    document.addEventListener('mousemove', function(e){
-      cursorGlow.style.opacity = '1';
-      cursorGlow.style.left = e.clientX + 'px';
-      cursorGlow.style.top = e.clientY + 'px';
+    mobileToggle.addEventListener("click", () => {
+      const isOpen = mainNavigation.classList.contains("open");
 
-      if (heroBg && e.clientY < window.innerHeight){
-        var xPct = (e.clientX / window.innerWidth - 0.5);
-        var yPct = (e.clientY / window.innerHeight - 0.5);
-        heroBg.style.transform = 'translate(' + (xPct*-10) + 'px,' + (yPct*-10) + 'px) scale(1.05)';
+      if (isOpen) {
+        closeMobileMenu();
+      } else {
+        openMobileMenu();
       }
     });
-    document.addEventListener('mouseleave', function(){ cursorGlow.style.opacity = '0'; });
-  }
 
-  /* ---------- Generic overlay open/close (modals + award lightboxes) ---------- */
-  var openOverlayEl = null;
-
-  function openOverlay(id){
-    var el = document.getElementById(id);
-    if (!el) return;
-    el.classList.add('open');
-    document.body.style.overflow = 'hidden';
-    openOverlayEl = el;
-  }
-  function closeOverlay(el){
-    if (!el) return;
-    el.classList.remove('open');
-    document.body.style.overflow = '';
-    if (openOverlayEl === el) openOverlayEl = null;
-  }
-
-  document.querySelectorAll('[data-modal-target]').forEach(function(trigger){
-    trigger.addEventListener('click', function(){
-      openOverlay(trigger.getAttribute('data-modal-target'));
-    });
-    trigger.setAttribute('tabindex','0');
-    trigger.setAttribute('role','button');
-    trigger.addEventListener('keydown', function(e){
-      if (e.key === 'Enter' || e.key === ' '){ e.preventDefault(); trigger.click(); }
-    });
-  });
-
-  document.querySelectorAll('.overlay').forEach(function(ov){
-    ov.addEventListener('click', function(e){
-      if (e.target === ov) closeOverlay(ov);
-    });
-    var closeBtn = ov.querySelector('[data-close]');
-    if (closeBtn) closeBtn.addEventListener('click', function(){ closeOverlay(ov); });
-  });
-
-  document.addEventListener('keydown', function(e){
-    if (e.key === 'Escape' && openOverlayEl){
-      if (openOverlayEl.id === 'gallery-lightbox'){ closeGalleryLightbox(); }
-      else { closeOverlay(openOverlayEl); }
-    }
-    if (openOverlayEl && openOverlayEl.id === 'gallery-lightbox'){
-      if (e.key === 'ArrowLeft') showGalleryImage(currentGalleryIndex - 1);
-      if (e.key === 'ArrowRight') showGalleryImage(currentGalleryIndex + 1);
-    }
-  });
-
-  /* ---------- Gallery build (26 images) ---------- */
-  var galleryGrid = document.getElementById('gallery-grid');
-  var galleryImages = [];
-  for (var g=1; g<=26; g++){
-    galleryImages.push('images/pic' + g + '.jpg');
-  }
-  galleryImages.forEach(function(src, idx){
-    var item = document.createElement('div');
-    item.className = 'gallery-item reveal';
-    item.setAttribute('data-index', idx);
-    item.setAttribute('tabindex','0');
-    item.setAttribute('role','button');
-    item.setAttribute('aria-label','Open gallery image ' + (idx+1));
-    item.innerHTML =
-      '<div class="fallback"><i class="fa-solid fa-image"></i></div>' +
-      '<img src="' + src + '" alt="Shree Himal Group Byawasaya Udhyog project photograph ' + (idx+1) + '" loading="lazy" onerror="this.style.display=\'none\'">' +
-      '<span class="view-icon"><i class="fa-solid fa-magnifying-glass-plus"></i></span>';
-    galleryGrid.appendChild(item);
-  });
-
-  /* Re-observe newly created gallery reveal items */
-  if ('IntersectionObserver' in window){
-    var io2 = new IntersectionObserver(function(entries){
-      entries.forEach(function(entry){
-        if (entry.isIntersecting){
-          entry.target.classList.add('in');
-          io2.unobserve(entry.target);
-        }
+    navLinks.forEach((link) => {
+      link.addEventListener("click", () => {
+        closeMobileMenu();
       });
-    }, { threshold:0.1, rootMargin:'0px 0px -40px 0px' });
-    document.querySelectorAll('#gallery-grid .reveal').forEach(function(el){ io2.observe(el); });
-  } else {
-    document.querySelectorAll('#gallery-grid .reveal').forEach(function(el){ el.classList.add('in'); });
-  }
+    });
 
-  /* ---------- Gallery lightbox logic ---------- */
-  var currentGalleryIndex = 0;
-  var lbImg = document.getElementById('lightbox-img');
-  var lbCounter = document.getElementById('lb-counter');
 
-  function showGalleryImage(index){
-    var total = galleryImages.length;
-    currentGalleryIndex = (index + total) % total;
-    lbImg.classList.remove('loaded');
-    lbImg.style.display = 'block';
-    lbImg.src = galleryImages[currentGalleryIndex];
-    lbCounter.textContent = (currentGalleryIndex + 1) + ' / ' + total;
-  }
+    /* =========================================================
+       HEADER SCROLL EFFECT
+       ========================================================= */
 
-  galleryGrid.addEventListener('click', function(e){
-    var item = e.target.closest('.gallery-item');
-    if (!item) return;
-    showGalleryImage(parseInt(item.getAttribute('data-index'), 10));
-    openOverlay('gallery-lightbox');
-  });
-  galleryGrid.addEventListener('keydown', function(e){
-    var item = e.target.closest('.gallery-item');
-    if (!item) return;
-    if (e.key === 'Enter' || e.key === ' '){
-      e.preventDefault();
-      showGalleryImage(parseInt(item.getAttribute('data-index'), 10));
-      openOverlay('gallery-lightbox');
+    const header = document.getElementById("header");
+    const backToTop = document.getElementById("backToTop");
+
+    function updateScrollUI() {
+      const scrolled = window.scrollY > 35;
+
+      header.classList.toggle("scrolled", scrolled);
+      backToTop.classList.toggle("show", window.scrollY > 550);
     }
-  });
 
-  document.getElementById('lb-prev').addEventListener('click', function(){ showGalleryImage(currentGalleryIndex - 1); });
-  document.getElementById('lb-next').addEventListener('click', function(){ showGalleryImage(currentGalleryIndex + 1); });
+    window.addEventListener("scroll", updateScrollUI, { passive: true });
 
-  function closeGalleryLightbox(){
-    closeOverlay(document.getElementById('gallery-lightbox'));
-  }
+    updateScrollUI();
 
-  /* Touch swipe support */
-  var touchStartX = 0;
-  var lightboxWrap = document.querySelector('#gallery-lightbox .lightbox-wrap');
-  lightboxWrap.addEventListener('touchstart', function(e){
-    touchStartX = e.changedTouches[0].screenX;
-  }, { passive:true });
-  lightboxWrap.addEventListener('touchend', function(e){
-    var touchEndX = e.changedTouches[0].screenX;
-    var diff = touchEndX - touchStartX;
-    if (Math.abs(diff) > 50){
-      if (diff < 0) showGalleryImage(currentGalleryIndex + 1);
-      else showGalleryImage(currentGalleryIndex - 1);
-    }
-  }, { passive:true });
 
-  /* ---------- Contact form validation + mailto ---------- */
-  var form = document.getElementById('inquiry-form');
-  var successBox = document.getElementById('form-success');
+    /* =========================================================
+       ACTIVE NAVIGATION
+       ========================================================= */
 
-  function setError(id, msg){
-    var el = document.getElementById('err-' + id);
-    if (el) el.textContent = msg || '';
-  }
+    const sections = document.querySelectorAll("main section[id]");
+    const navigationLinks = document.querySelectorAll(".nav-link");
 
-  form.addEventListener('submit', function(e){
-    e.preventDefault();
-    successBox.classList.remove('show');
+    const sectionObserver = new IntersectionObserver(
+      (entries) => {
 
-    var name = form.name.value.trim();
-    var phone = form.phone.value.trim();
-    var email = form.email.value.trim();
-    var message = form.message.value.trim();
-    var valid = true;
+        entries.forEach((entry) => {
 
-    setError('name',''); setError('phone',''); setError('email',''); setError('message','');
+          if (entry.isIntersecting) {
 
-    if (!name){ setError('name','Please enter your name.'); valid = false; }
-    if (!phone){ setError('phone','Please enter your phone number.'); valid = false; }
-    if (!email){ setError('email','Please enter your email.'); valid = false; }
-    else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){ setError('email','Please enter a valid email.'); valid = false; }
-    if (!message){ setError('message','Please enter your message.'); valid = false; }
+            navigationLinks.forEach((link) => {
+              link.classList.remove("active");
+            });
 
-    if (!valid) return;
+            const activeLink = document.querySelector(
+              '.nav-link[href="#' + entry.target.id + '"]'
+            );
 
-    var subject = encodeURIComponent('Website Inquiry - Shree Himal Group Byawasaya Udhyog');
-    var body = encodeURIComponent(
-      'Name: ' + name + '\n' +
-      'Phone: ' + phone + '\n' +
-      'Email: ' + email + '\n\n' +
-      'Message:\n' + message
+            if (activeLink) {
+              activeLink.classList.add("active");
+            }
+          }
+
+        });
+
+      },
+      {
+        rootMargin: "-35% 0px -55% 0px",
+        threshold: 0
+      }
     );
-    window.location.href = 'mailto:shreehimalgroup54@gmail.com?subject=' + subject + '&body=' + body;
 
-    successBox.classList.add('show');
-    form.reset();
-  });
+    sections.forEach((section) => {
+      sectionObserver.observe(section);
+    });
 
-})();
-</script>
+
+    /* =========================================================
+       REVEAL ANIMATIONS
+       ========================================================= */
+
+    const revealElements = document.querySelectorAll(".reveal");
+
+    const revealObserver = new IntersectionObserver(
+      (entries, observer) => {
+
+        entries.forEach((entry) => {
+
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+            observer.unobserve(entry.target);
+          }
+
+        });
+
+      },
+      {
+        threshold: 0.08
+      }
+    );
+
+    revealElements.forEach((element) => {
+      revealObserver.observe(element);
+    });
+
+
+    /* =========================================================
+       PROJECT TABS
+       Exactly two tabs
+       ========================================================= */
+
+    const projectTabs = document.querySelectorAll(".project-tab");
+    const projectPanels = document.querySelectorAll(".project-panel");
+
+    projectTabs.forEach((tab) => {
+
+      tab.addEventListener("click", () => {
+
+        const targetId = tab.dataset.project;
+
+        projectTabs.forEach((item) => {
+          item.classList.remove("active");
+          item.setAttribute("aria-selected", "false");
+        });
+
+        projectPanels.forEach((panel) => {
+          panel.classList.remove("active");
+        });
+
+        tab.classList.add("active");
+        tab.setAttribute("aria-selected", "true");
+
+        const targetPanel = document.getElementById(targetId);
+
+        if (targetPanel) {
+          targetPanel.classList.add("active");
+        }
+
+      });
+
+    });
+
+
+    /* =========================================================
+       LIGHTBOX
+       Includes:
+       - Gallery
+       - PAN document
+       - Registration document
+       - Previous/next
+       - ESC
+       - Keyboard support
+       - Basic touch swipe
+       ========================================================= */
+
+    const lightbox = document.getElementById("lightbox");
+    const lightboxImage = document.getElementById("lightboxImage");
+    const lightboxCaption = document.getElementById("lightboxCaption");
+    const lightboxClose = document.getElementById("lightboxClose");
+    const lightboxPrev = document.getElementById("lightboxPrev");
+    const lightboxNext = document.getElementById("lightboxNext");
+
+    const lightboxTriggers = Array.from(
+      document.querySelectorAll(".lightbox-trigger")
+    );
+
+    let currentLightboxIndex = 0;
+    let touchStartX = 0;
+    let touchEndX = 0;
+
+    function showLightbox(index) {
+
+      if (!lightboxTriggers.length) return;
+
+      if (index < 0) {
+        index = lightboxTriggers.length - 1;
+      }
+
+      if (index >= lightboxTriggers.length) {
+        index = 0;
+      }
+
+      currentLightboxIndex = index;
+
+      const item = lightboxTriggers[currentLightboxIndex];
+      const imagePath = item.dataset.image;
+      const caption = item.dataset.caption || "";
+
+      lightboxImage.src = imagePath;
+      lightboxImage.alt = caption;
+      lightboxCaption.textContent = caption;
+
+      lightbox.classList.add("open");
+      lightbox.setAttribute("aria-hidden", "false");
+
+      document.body.classList.add("menu-open");
+
+      lightboxClose.focus();
+    }
+
+    function closeLightbox() {
+
+      lightbox.classList.remove("open");
+      lightbox.setAttribute("aria-hidden", "true");
+
+      lightboxImage.src = "";
+
+      document.body.classList.remove("menu-open");
+    }
+
+    function nextLightboxImage() {
+      showLightbox(currentLightboxIndex + 1);
+    }
+
+    function previousLightboxImage() {
+      showLightbox(currentLightboxIndex - 1);
+    }
+
+    lightboxTriggers.forEach((item, index) => {
+
+      item.addEventListener("click", () => {
+        showLightbox(index);
+      });
+
+      item.addEventListener("keydown", (event) => {
+
+        if (event.key === "Enter" || event.key === " ") {
+          event.preventDefault();
+          showLightbox(index);
+        }
+
+      });
+
+    });
+
+    lightboxClose.addEventListener("click", closeLightbox);
+
+    lightboxNext.addEventListener("click", nextLightboxImage);
+
+    lightboxPrev.addEventListener("click", previousLightboxImage);
+
+    lightbox.addEventListener("click", (event) => {
+
+      if (event.target === lightbox) {
+        closeLightbox();
+      }
+
+    });
+
+    document.addEventListener("keydown", (event) => {
+
+      if (!lightbox.classList.contains("open")) return;
+
+      if (event.key === "Escape") {
+        closeLightbox();
+      }
+
+      if (event.key === "ArrowRight") {
+        nextLightboxImage();
+      }
+
+      if (event.key === "ArrowLeft") {
+        previousLightboxImage();
+      }
+
+    });
+
+    lightbox.addEventListener("touchstart", (event) => {
+      touchStartX = event.changedTouches[0].screenX;
+    }, { passive: true });
+
+    lightbox.addEventListener("touchend", (event) => {
+
+      touchEndX = event.changedTouches[0].screenX;
+
+      const difference = touchStartX - touchEndX;
+
+      if (Math.abs(difference) < 50) return;
+
+      if (difference > 0) {
+        nextLightboxImage();
+      } else {
+        previousLightboxImage();
+      }
+
+    }, { passive: true });
+
+
+    /* =========================================================
+       CONTACT FORM → WHATSAPP
+       Static GitHub Pages compatible
+       ========================================================= */
+
+    const contactForm = document.getElementById("contactForm");
+    const formStatus = document.getElementById("formStatus");
+
+    contactForm.addEventListener("submit", (event) => {
+
+      event.preventDefault();
+
+      if (!contactForm.checkValidity()) {
+        contactForm.reportValidity();
+        return;
+      }
+
+      const name = document.getElementById("name").value.trim();
+      const phone = document.getElementById("phone").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const service = document.getElementById("service").value.trim();
+      const message = document.getElementById("message").value.trim();
+
+      const whatsappMessage =
+        "Hello Shree Himal Group,%0A%0A" +
+        "*New Website Inquiry*%0A%0A" +
+        "*Name:* " + encodeURIComponent(name) + "%0A" +
+        "*Phone:* " + encodeURIComponent(phone) + "%0A" +
+        "*Email:* " + encodeURIComponent(email || "Not provided") + "%0A" +
+        "*Service / Requirement:* " + encodeURIComponent(service) + "%0A" +
+        "*Message:* " + encodeURIComponent(message);
+
+      formStatus.classList.add("show");
+      formStatus.textContent =
+        "Opening WhatsApp with your inquiry...";
+
+      const whatsappURL =
+        "https://wa.me/9779857030399?text=" + whatsappMessage;
+
+      window.open(whatsappURL, "_blank", "noopener,noreferrer");
+
+    });
+
+
+    /* =========================================================
+       BACK TO TOP
+       ========================================================= */
+
+    backToTop.addEventListener("click", () => {
+
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+
+    });
+
+
+    /* =========================================================
+       CLOSE MOBILE MENU WHEN CLICKING OUTSIDE
+       ========================================================= */
+
+    document.addEventListener("click", (event) => {
+
+      if (!mainNavigation.classList.contains("open")) return;
+
+      const clickedInsideNav =
+        mainNavigation.contains(event.target);
+
+      const clickedToggle =
+        mobileToggle.contains(event.target);
+
+      if (!clickedInsideNav && !clickedToggle) {
+        closeMobileMenu();
+      }
+
+    });
+
+
+    /* =========================================================
+       ESCAPE MOBILE MENU
+       ========================================================= */
+
+    document.addEventListener("keydown", (event) => {
+
+      if (
+        event.key === "Escape" &&
+        mainNavigation.classList.contains("open")
+      ) {
+        closeMobileMenu();
+        mobileToggle.focus();
+      }
+
+    });
+
+  </script>
+
 </body>
 </html>
