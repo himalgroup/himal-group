@@ -1017,41 +1017,238 @@ footer.site-footer{ background:linear-gradient(165deg, var(--ink), var(--steel))
 </div>
 
 <!-- ============================================================
-     HOME / HERO
-     ============================================================ -->
+     <!-- ============================================================
+HOME / HERO
+============================================================ -->
 <section id="home" class="hero">
+
   <div class="hero-media">
-    <img src="home.png" alt=" Shree Himal Group Nirman Byawasaya Udhyog construction and infrastructure work">
+    <img src="home.png" alt="Shree Himal Group Nirman Byawasaya Udhyog construction and infrastructure work">
     <div class="scrim"></div>
-    <div class="hero-sparkles" aria-hidden="true"></div>
   </div>
-  <div class="hero-content">
-    <div class="container">
-      <p class="hero-eyebrow">Nirban Byawasaya Udhyog &middot; Rupandehi, Nepal</p>
-      <h1 class="hero-title">
-        <span class="line"><span>Building Infrastructure.</span></span>
-        <span class="line"><span>Supporting Progress.</span></span>
-      </h1>
-      <p class="hero-sub">Construction, infrastructure development and dependable material and equipment support from a business rooted in Arghakhanchi and operating in Murgiya, Rupandehi.</p>
-      <div class="hero-actions">
-        <a href="#services" class="btn btn-primary">
-          Explore Our Services
-          <svg viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </a>
-        <a href="#contact" class="btn btn-outline">Contact Us</a>
-        <a href="#projects" class="btn btn-ghost">
-          View Projects
-          <svg viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </a>
-      </div>
+
+  <!-- TOP TEXT -->
+  <div class="hero-top">
+    <p>NIRMAN BYAWASAYA UDHYOG · RUPANDEHI, NEPAL</p>
+  </div>
+
+  <!-- BOTTOM TEXT -->
+  <div class="hero-bottom">
+    <h1>
+      Building Infrastructure.<br>
+      Supporting Progress.
+    </h1>
+
+    <p>
+      Construction, infrastructure development and dependable material
+      and equipment support from a business rooted in Arghakhanchi
+      and operating in Murgiya, Rupandehi.
+    </p>
+
+    <div class="hero-actions">
+      <a href="#services" class="btn btn-primary">
+        Explore Our Services
+      </a>
+
+      <a href="#contact" class="btn btn-outline">
+        Contact Us
+      </a>
+
+      <a href="#projects" class="btn btn-ghost">
+        View Projects →
+      </a>
     </div>
   </div>
+
   <div class="hero-scroll-cue">
     <div class="rod"></div>
     <span>SCROLL</span>
   </div>
+
 </section>
 
+<style>
+/* ============================================================
+   HERO
+============================================================ */
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  min-height: 650px;
+  overflow: hidden;
+  background: #111;
+}
+
+/* FULL BACKGROUND IMAGE — NO CROPPING */
+.hero-media {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #111;
+}
+
+.hero-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  display: block;
+}
+
+/* DARK GRADIENT ONLY AT TOP AND BOTTOM */
+.scrim {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(0,0,0,.72) 0%,
+      rgba(0,0,0,.10) 25%,
+      rgba(0,0,0,.02) 55%,
+      rgba(0,0,0,.78) 100%
+    );
+  pointer-events: none;
+}
+
+/* TOP BRANDING */
+.hero-top {
+  position: absolute;
+  top: 45px;
+  left: 0;
+  width: 100%;
+  padding: 0 6%;
+  z-index: 5;
+}
+
+.hero-top p {
+  margin: 0;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  text-shadow: 0 2px 8px rgba(0,0,0,.7);
+}
+
+/* BOTTOM CONTENT */
+.hero-bottom {
+  position: absolute;
+  left: 0;
+  bottom: 55px;
+  width: 100%;
+  padding: 0 6%;
+  z-index: 5;
+}
+
+.hero-bottom h1 {
+  margin: 0 0 18px;
+  max-width: 750px;
+  color: #fff;
+  font-size: clamp(42px, 5.5vw, 82px);
+  line-height: .98;
+  font-weight: 700;
+  letter-spacing: -2px;
+  text-shadow: 0 3px 15px rgba(0,0,0,.75);
+}
+
+.hero-bottom p {
+  max-width: 650px;
+  margin: 0 0 25px;
+  color: rgba(255,255,255,.94);
+  font-size: 16px;
+  line-height: 1.65;
+  text-shadow: 0 2px 8px rgba(0,0,0,.8);
+}
+
+/* BUTTONS */
+.hero-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.hero-actions a {
+  text-decoration: none;
+}
+
+/* SCROLL */
+.hero-scroll-cue {
+  position: absolute;
+  right: 35px;
+  bottom: 45px;
+  z-index: 6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 9px;
+  color: #fff;
+  font-size: 9px;
+  letter-spacing: 2px;
+}
+
+.hero-scroll-cue .rod {
+  width: 1px;
+  height: 45px;
+  background: rgba(255,255,255,.75);
+}
+
+/* ============================================================
+   MOBILE
+============================================================ */
+
+@media (max-width: 768px) {
+
+  .hero {
+    min-height: 700px;
+  }
+
+  .hero-media img {
+    object-fit: contain;
+  }
+
+  .hero-top {
+    top: 28px;
+    padding: 0 25px;
+  }
+
+  .hero-top p {
+    font-size: 9px;
+    letter-spacing: 1.5px;
+  }
+
+  .hero-bottom {
+    bottom: 35px;
+    padding: 0 25px;
+  }
+
+  .hero-bottom h1 {
+    font-size: clamp(38px, 11vw, 58px);
+    letter-spacing: -1.5px;
+    margin-bottom: 15px;
+  }
+
+  .hero-bottom p {
+    font-size: 14px;
+    line-height: 1.5;
+    max-width: 95%;
+  }
+
+  .hero-actions {
+    gap: 8px;
+  }
+
+  .hero-scroll-cue {
+    display: none;
+  }
+}
+</style>
 <!-- ============================================================
      WHAT WE DO
      ============================================================ -->
