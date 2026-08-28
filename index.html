@@ -1018,22 +1018,40 @@ footer.site-footer{ background:linear-gradient(165deg, var(--ink), var(--steel))
 
 <!-- ============================================================
      <!-- ============================================================
+<!-- ============================================================
 HOME / HERO
 ============================================================ -->
 <section id="home" class="hero">
 
+  <!-- FULL HERO IMAGE -->
   <div class="hero-media">
-    <img src="home.png" alt="Shree Himal Group Nirman Byawasaya Udhyog construction and infrastructure work">
-    <div class="scrim"></div>
+    <img 
+      src="home.png" 
+      alt="Shree Himal Group Nirman Byawasaya Udhyog construction and infrastructure work"
+    >
   </div>
 
-  <!-- TOP TEXT -->
+  <!-- VERY LIGHT OVERLAY -->
+  <div class="hero-overlay"></div>
+
+  <!-- TOP COMPANY BRANDING -->
   <div class="hero-top">
-    <p>NIRMAN BYAWASAYA UDHYOG · RUPANDEHI, NEPAL</p>
+    <div class="company-name">
+      Shree Himal Group
+    </div>
+
+    <div class="company-type">
+      NIRMAN BYAWASAYA UDHYOG
+    </div>
+
+    <div class="company-location">
+      CONSTRUCTION · INFRASTRUCTURE · MATERIAL SUPPLY
+    </div>
   </div>
 
-  <!-- BOTTOM TEXT -->
+  <!-- BOTTOM CONTENT -->
   <div class="hero-bottom">
+
     <h1>
       Building Infrastructure.<br>
       Supporting Progress.
@@ -1046,6 +1064,7 @@ HOME / HERO
     </p>
 
     <div class="hero-actions">
+
       <a href="#services" class="btn btn-primary">
         Explore Our Services
       </a>
@@ -1057,9 +1076,12 @@ HOME / HERO
       <a href="#projects" class="btn btn-ghost">
         View Projects →
       </a>
+
     </div>
+
   </div>
 
+  <!-- SCROLL -->
   <div class="hero-scroll-cue">
     <div class="rod"></div>
     <span>SCROLL</span>
@@ -1067,110 +1089,218 @@ HOME / HERO
 
 </section>
 
+
 <style>
+
 /* ============================================================
-   HERO
+   HERO BASE
 ============================================================ */
 
 .hero {
   position: relative;
   width: 100%;
   height: 100vh;
-  min-height: 650px;
+  min-height: 680px;
   overflow: hidden;
-  background: #111;
+  background: #081426;
 }
 
-/* FULL BACKGROUND IMAGE — NO CROPPING */
+
+/* ============================================================
+   IMAGE
+============================================================ */
+
 .hero-media {
   position: absolute;
   inset: 0;
   width: 100%;
   height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #111;
+  overflow: hidden;
 }
 
 .hero-media img {
+  position: absolute;
+  inset: 0;
+
   width: 100%;
   height: 100%;
-  object-fit: contain;
-  object-position: center;
+
+  /*
+   * COVER ON LARGE SCREENS
+   * Gives a proper full-screen professional hero.
+   */
+  object-fit: cover;
+  object-position: center center;
+
   display: block;
 }
 
-/* DARK GRADIENT ONLY AT TOP AND BOTTOM */
-.scrim {
+
+/* ============================================================
+   LIGHT OVERLAY
+============================================================ */
+
+.hero-overlay {
   position: absolute;
   inset: 0;
+  z-index: 1;
+  pointer-events: none;
+
+  /*
+   * IMPORTANT:
+   * Previous version was too dark.
+   * This keeps the machinery, mountains and vehicles visible.
+   */
   background:
     linear-gradient(
       to bottom,
-      rgba(0,0,0,.72) 0%,
-      rgba(0,0,0,.10) 25%,
-      rgba(0,0,0,.02) 55%,
-      rgba(0,0,0,.78) 100%
+      rgba(3, 15, 30, 0.48) 0%,
+      rgba(3, 15, 30, 0.05) 30%,
+      rgba(3, 15, 30, 0.00) 55%,
+      rgba(3, 15, 30, 0.70) 100%
     );
-  pointer-events: none;
 }
 
-/* TOP BRANDING */
+
+/* ============================================================
+   TOP COMPANY BRANDING
+============================================================ */
+
 .hero-top {
   position: absolute;
-  top: 45px;
+  top: 32px;
   left: 0;
   width: 100%;
+
   padding: 0 6%;
+
   z-index: 5;
+
+  text-shadow:
+    0 2px 8px rgba(0,0,0,.75),
+    0 3px 20px rgba(0,0,0,.55);
 }
 
-.hero-top p {
-  margin: 0;
-  color: #fff;
-  font-size: 12px;
+
+/* COMPANY NAME */
+
+.company-name {
+  color: #ffffff;
+
+  font-size: clamp(25px, 3vw, 42px);
+
+  line-height: 1.05;
+
+  font-weight: 800;
+
+  letter-spacing: -0.8px;
+
+  margin-bottom: 8px;
+}
+
+
+/* COMPANY TYPE */
+
+.company-type {
+  color: #ffffff;
+
+  font-size: clamp(15px, 1.4vw, 20px);
+
+  line-height: 1.2;
+
+  font-weight: 700;
+
+  letter-spacing: 2px;
+
+  margin-bottom: 6px;
+}
+
+
+/* SMALL DESCRIPTION */
+
+.company-location {
+  color: rgba(255,255,255,.90);
+
+  font-size: clamp(10px, 1vw, 13px);
+
   font-weight: 600;
-  letter-spacing: 2.5px;
-  text-transform: uppercase;
-  text-shadow: 0 2px 8px rgba(0,0,0,.7);
+
+  letter-spacing: 2px;
 }
 
-/* BOTTOM CONTENT */
+
+/* ============================================================
+   BOTTOM CONTENT
+============================================================ */
+
 .hero-bottom {
   position: absolute;
+
   left: 0;
-  bottom: 55px;
+  bottom: 48px;
+
   width: 100%;
+
   padding: 0 6%;
+
   z-index: 5;
 }
+
+
+/* MAIN HEADING */
 
 .hero-bottom h1 {
   margin: 0 0 18px;
-  max-width: 750px;
-  color: #fff;
+
+  max-width: 800px;
+
+  color: #ffffff;
+
   font-size: clamp(42px, 5.5vw, 82px);
+
   line-height: .98;
-  font-weight: 700;
-  letter-spacing: -2px;
-  text-shadow: 0 3px 15px rgba(0,0,0,.75);
+
+  font-weight: 800;
+
+  letter-spacing: -2.5px;
+
+  text-shadow:
+    0 3px 10px rgba(0,0,0,.90),
+    0 5px 25px rgba(0,0,0,.65);
 }
+
+
+/* DESCRIPTION */
 
 .hero-bottom p {
-  max-width: 650px;
-  margin: 0 0 25px;
-  color: rgba(255,255,255,.94);
+  max-width: 680px;
+
+  margin: 0 0 26px;
+
+  color: #ffffff;
+
   font-size: 16px;
-  line-height: 1.65;
-  text-shadow: 0 2px 8px rgba(0,0,0,.8);
+
+  line-height: 1.55;
+
+  font-weight: 400;
+
+  text-shadow:
+    0 2px 7px rgba(0,0,0,.95);
 }
 
-/* BUTTONS */
+
+/* ============================================================
+   BUTTONS
+============================================================ */
+
 .hero-actions {
   display: flex;
+
   align-items: center;
+
   gap: 12px;
+
   flex-wrap: wrap;
 }
 
@@ -1178,26 +1308,73 @@ HOME / HERO
   text-decoration: none;
 }
 
-/* SCROLL */
+
+/* ============================================================
+   SCROLL
+============================================================ */
+
 .hero-scroll-cue {
   position: absolute;
+
   right: 35px;
-  bottom: 45px;
+  bottom: 40px;
+
   z-index: 6;
+
   display: flex;
+
   flex-direction: column;
+
   align-items: center;
-  gap: 9px;
-  color: #fff;
+
+  gap: 8px;
+
+  color: #ffffff;
+
   font-size: 9px;
+
+  font-weight: 600;
+
   letter-spacing: 2px;
+
+  text-shadow: 0 2px 5px #000;
 }
 
 .hero-scroll-cue .rod {
   width: 1px;
+
   height: 45px;
-  background: rgba(255,255,255,.75);
+
+  background: rgba(255,255,255,.8);
 }
+
+
+/* ============================================================
+   TABLET
+============================================================ */
+
+@media (max-width: 900px) {
+
+  .hero {
+    min-height: 720px;
+  }
+
+  .hero-top {
+    top: 28px;
+    padding: 0 5%;
+  }
+
+  .hero-bottom {
+    bottom: 40px;
+    padding: 0 5%;
+  }
+
+  .hero-bottom h1 {
+    font-size: clamp(40px, 7vw, 65px);
+  }
+
+}
+
 
 /* ============================================================
    MOBILE
@@ -1206,48 +1383,196 @@ HOME / HERO
 @media (max-width: 768px) {
 
   .hero {
+    /*
+     * Important:
+     * Don't create the giant dark empty area from
+     * object-fit: contain.
+     */
+    height: 100svh;
     min-height: 700px;
   }
 
+
+  /* FULL IMAGE ON MOBILE */
+
   .hero-media img {
-    object-fit: contain;
+    width: 100%;
+    height: 100%;
+
+    /*
+     * Keep the important central construction scene visible.
+     */
+    object-fit: cover;
+    object-position: center center;
   }
+
+
+  /* LIGHTER MOBILE OVERLAY */
+
+  .hero-overlay {
+    background:
+      linear-gradient(
+        to bottom,
+        rgba(3,15,30,.55) 0%,
+        rgba(3,15,30,.08) 28%,
+        rgba(3,15,30,0) 52%,
+        rgba(3,15,30,.82) 100%
+      );
+  }
+
+
+  /* TOP */
 
   .hero-top {
-    top: 28px;
-    padding: 0 25px;
+    top: 22px;
+
+    padding: 0 22px;
+
+    text-align: left;
   }
 
-  .hero-top p {
-    font-size: 9px;
-    letter-spacing: 1.5px;
+
+  .company-name {
+    font-size: 27px;
+
+    line-height: 1.05;
+
+    letter-spacing: -0.5px;
+
+    margin-bottom: 7px;
   }
+
+
+  .company-type {
+    font-size: 14px;
+
+    letter-spacing: 1.5px;
+
+    margin-bottom: 5px;
+  }
+
+
+  .company-location {
+    font-size: 9px;
+
+    letter-spacing: 1.3px;
+
+    line-height: 1.4;
+  }
+
+
+  /* BOTTOM */
 
   .hero-bottom {
-    bottom: 35px;
-    padding: 0 25px;
+    bottom: 28px;
+
+    padding: 0 22px;
   }
+
 
   .hero-bottom h1 {
-    font-size: clamp(38px, 11vw, 58px);
+    max-width: 100%;
+
+    font-size: 39px;
+
+    line-height: 1.02;
+
     letter-spacing: -1.5px;
-    margin-bottom: 15px;
+
+    margin-bottom: 14px;
   }
+
 
   .hero-bottom p {
-    font-size: 14px;
+    max-width: 100%;
+
+    font-size: 13px;
+
     line-height: 1.5;
-    max-width: 95%;
+
+    margin-bottom: 18px;
   }
 
+
+  /* BUTTONS */
+
   .hero-actions {
-    gap: 8px;
+    gap: 7px;
   }
+
+
+  .hero-actions a {
+    font-size: 12px;
+  }
+
+
+  /* HIDE SCROLL ON PHONE */
 
   .hero-scroll-cue {
     display: none;
   }
+
 }
+
+
+/* ============================================================
+   SMALL PHONES
+============================================================ */
+
+@media (max-width: 430px) {
+
+  .hero {
+    min-height: 680px;
+  }
+
+
+  .hero-top {
+    top: 20px;
+
+    padding: 0 18px;
+  }
+
+
+  .company-name {
+    font-size: 24px;
+  }
+
+
+  .company-type {
+    font-size: 12px;
+
+    letter-spacing: 1.2px;
+  }
+
+
+  .company-location {
+    font-size: 8px;
+  }
+
+
+  .hero-bottom {
+    bottom: 23px;
+
+    padding: 0 18px;
+  }
+
+
+  .hero-bottom h1 {
+    font-size: 35px;
+
+    line-height: 1.02;
+  }
+
+
+  .hero-bottom p {
+    font-size: 12px;
+
+    line-height: 1.45;
+  }
+
+}
+
+</style>
 </style>
 <!-- ============================================================
      WHAT WE DO
