@@ -4723,3 +4723,232 @@ body.true-tab-layout .true-page-host > #spaVision {
   else bind();
 })();
 </script>
+
+<style id="real-tab-display-fix">
+/* ============================================================
+   REAL TAB DISPLAY FIX
+   IMPORTANT: the old cinematic CSS contains:
+     body.spa-mode #home { display:flex !important; }
+   That rule was forcing HOME to remain visible above every tab.
+   This override makes exactly ONE page exist in the visual layout.
+   ============================================================ */
+
+html, body {
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  overflow: hidden !important;
+}
+
+body.true-tab-layout {
+  position: fixed !important;
+  inset: 0 !important;
+  overflow: hidden !important;
+}
+
+/* The host is the only scrolling surface. */
+body.true-tab-layout > .true-page-host {
+  position: fixed !important;
+  inset: 0 !important;
+  width: 100vw !important;
+  height: 100dvh !important;
+  min-height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow-x: hidden !important;
+  overflow-y: auto !important;
+  box-sizing: border-box !important;
+}
+
+/* ============================================================
+   HIDE EVERY TAB BY DEFAULT
+   !important is intentional because the original site contains
+   old spa-mode rules that otherwise force #home to display.
+   ============================================================ */
+body.true-tab-layout > .true-page-host > #home,
+body.true-tab-layout > .true-page-host > #home-overview,
+body.true-tab-layout > .true-page-host > #about,
+body.true-tab-layout > .true-page-host > #services,
+body.true-tab-layout > .true-page-host > #projects,
+body.true-tab-layout > .true-page-host > #achievements,
+body.true-tab-layout > .true-page-host > #gallery,
+body.true-tab-layout > .true-page-host > #contact,
+body.true-tab-layout > .true-page-host > #spaMission,
+body.true-tab-layout > .true-page-host > #spaVision,
+body.true-tab-layout > .true-page-host > footer {
+  display: none !important;
+  visibility: hidden !important;
+  position: relative !important;
+  top: auto !important;
+  left: auto !important;
+  right: auto !important;
+  bottom: auto !important;
+  margin-top: 0 !important;
+}
+
+/* ============================================================
+   SHOW ONLY THE CURRENT TAB
+   ============================================================ */
+body.true-tab-layout[data-page="home"] > .true-page-host > #home {
+  display: flex !important;
+  visibility: visible !important;
+}
+
+body.true-tab-layout[data-page="home"] > .true-page-host > #home-overview {
+  display: block !important;
+  visibility: visible !important;
+}
+
+body.true-tab-layout[data-page="about"] > .true-page-host > #about,
+body.true-tab-layout[data-page="services"] > .true-page-host > #services,
+body.true-tab-layout[data-page="projects"] > .true-page-host > #projects,
+body.true-tab-layout[data-page="achievements"] > .true-page-host > #achievements,
+body.true-tab-layout[data-page="gallery"] > .true-page-host > #gallery,
+body.true-tab-layout[data-page="contact"] > .true-page-host > #contact {
+  display: block !important;
+  visibility: visible !important;
+}
+
+body.true-tab-layout[data-page="mission"] > .true-page-host > #spaMission,
+body.true-tab-layout[data-page="vision"] > .true-page-host > #spaVision {
+  display: block !important;
+  visibility: visible !important;
+}
+
+/* Contact footer belongs only to Contact. */
+body.true-tab-layout[data-page="contact"] > .true-page-host > footer {
+  display: block !important;
+  visibility: visible !important;
+}
+
+/* ============================================================
+   NO ARTIFICIAL TOP GAP
+   Navigation floats above the page and does not consume space.
+   The content itself gets only enough top padding to clear it.
+   ============================================================ */
+body.true-tab-layout > .true-page-host > #about,
+body.true-tab-layout > .true-page-host > #services,
+body.true-tab-layout > .true-page-host > #projects,
+body.true-tab-layout > .true-page-host > #achievements,
+body.true-tab-layout > .true-page-host > #gallery,
+body.true-tab-layout > .true-page-host > #contact {
+  padding-top: 82px !important;
+  box-sizing: border-box !important;
+}
+
+body.true-tab-layout > .true-page-host > #spaMission,
+body.true-tab-layout > .true-page-host > #spaVision {
+  padding-top: 88px !important;
+  box-sizing: border-box !important;
+  min-height: 100dvh !important;
+}
+
+/* Never let old hero sizing/padding survive when Home is hidden. */
+body.true-tab-layout[data-page]:not([data-page="home"])
+  > .true-page-host > #home {
+  display: none !important;
+  visibility: hidden !important;
+}
+
+/* Fixed cinematic navigation. */
+body.true-tab-layout .cinematic-nav {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  z-index: 9000 !important;
+}
+
+/* Old header must not create layout space. */
+body.true-tab-layout > header.site-header,
+body.true-tab-layout > .site-header,
+body.true-tab-layout > .mobile-nav,
+body.true-tab-layout > .survey-rail {
+  display: none !important;
+}
+
+@media (max-width: 700px) {
+  body.true-tab-layout > .true-page-host {
+    height: 100svh !important;
+  }
+
+  body.true-tab-layout > .true-page-host > #about,
+  body.true-tab-layout > .true-page-host > #services,
+  body.true-tab-layout > .true-page-host > #projects,
+  body.true-tab-layout > .true-page-host > #achievements,
+  body.true-tab-layout > .true-page-host > #gallery,
+  body.true-tab-layout > .true-page-host > #contact {
+    padding-top: 72px !important;
+  }
+
+  body.true-tab-layout > .true-page-host > #spaMission,
+  body.true-tab-layout > .true-page-host > #spaVision {
+    padding-top: 74px !important;
+    min-height: 100svh !important;
+  }
+}
+</style>
+
+<script id="real-tab-display-fix-script">
+(function () {
+  "use strict";
+
+  function forceTop() {
+    var host = document.querySelector("body > .true-page-host");
+    if (host) {
+      host.scrollTop = 0;
+      host.scrollLeft = 0;
+    }
+    window.scrollTo(0, 0);
+  }
+
+  function syncTab() {
+    var page = (document.body.getAttribute("data-page") || "home").toLowerCase();
+    var allowed = [
+      "home","about","services","projects","mission",
+      "vision","achievements","gallery","contact"
+    ];
+
+    if (allowed.indexOf(page) === -1) page = "home";
+
+    document.body.setAttribute("data-page", page);
+    forceTop();
+  }
+
+  function install() {
+    syncTab();
+
+    document.addEventListener("click", function (event) {
+      var button = event.target.closest &&
+        event.target.closest(
+          ".cinematic-nav [data-page], .cinematic-mobile-panel [data-page]"
+        );
+
+      if (!button) return;
+
+      /* The existing tab controller changes data-page.
+         Re-check immediately after it does so. */
+      setTimeout(syncTab, 0);
+      setTimeout(syncTab, 30);
+      setTimeout(syncTab, 150);
+      setTimeout(syncTab, 600);
+    }, true);
+
+    window.addEventListener("hashchange", function () {
+      setTimeout(syncTab, 0);
+      setTimeout(syncTab, 100);
+    });
+
+    window.addEventListener("load", function () {
+      setTimeout(syncTab, 0);
+    });
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", install);
+  } else {
+    install();
+  }
+})();
+</script>
