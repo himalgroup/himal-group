@@ -4614,6 +4614,68 @@ body.true-tab-layout .survey-rail{
 })();
 </script>
 
+
+<style id="mobile-navigation-final-fix">
+/* FINAL MOBILE/TABLET NAVIGATION FIX */
+@media (max-width:1100px){
+  .cinematic-nav{
+    display:flex!important;
+    height:68px!important;
+    padding:0 15px!important;
+    visibility:visible!important;
+    opacity:1!important;
+  }
+  .cinematic-nav-inner{
+    width:100%!important;
+    display:flex!important;
+    align-items:center!important;
+    justify-content:space-between!important;
+  }
+  .cinematic-nav-links{
+    display:none!important;
+  }
+  .cinematic-menu{
+    display:flex!important;
+    visibility:visible!important;
+    opacity:1!important;
+    align-items:center!important;
+    justify-content:center!important;
+    flex:0 0 44px!important;
+    width:44px!important;
+    height:44px!important;
+    margin-left:auto!important;
+    position:relative!important;
+    z-index:9010!important;
+  }
+  .cinematic-brand{
+    display:block!important;
+    visibility:visible!important;
+    opacity:1!important;
+    max-width:calc(100% - 58px)!important;
+    overflow:hidden!important;
+  }
+}
+@media (max-width:600px){
+  .cinematic-brand{font-size:15px!important;line-height:1.05!important;white-space:nowrap!important;text-overflow:ellipsis!important;}
+  .cinematic-mobile-panel{
+    display:none!important;
+    top:68px!important;
+    left:10px!important;
+    right:10px!important;
+    max-height:calc(100svh - 82px)!important;
+    overflow-y:auto!important;
+    z-index:8999!important;
+  }
+  .cinematic-mobile-panel.open{
+    display:grid!important;
+  }
+  .cinematic-mobile-panel button{
+    display:block!important;
+    width:100%!important;
+    min-height:46px!important;
+  }
+}
+</style>
 </body></html><style id="absolute-final-gap-killer">
 /* ============================================================
    ABSOLUTE FINAL TAB FIX
