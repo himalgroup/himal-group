@@ -3935,4 +3935,566 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 </style>
 
+
+<style id="spa-cinematic-redesign">
+/* ============================================================
+   SHREE HIMAL GROUP — CINEMATIC SINGLE-PAGE TAB EXPERIENCE
+   Home is the only page visible on first load.
+   Every other area opens as its own cinematic tab.
+   ============================================================ */
+
+html{scroll-behavior:auto!important;}
+body.spa-mode{overflow-x:hidden;background:#050b18;}
+body.spa-mode > section,
+body.spa-mode > footer{
+  display:none!important;
+  width:100%!important;
+  max-width:100%!important;
+  min-height:100vh;
+}
+body.spa-mode #home{display:flex!important;}
+body.spa-mode[data-page="about"] #about,
+body.spa-mode[data-page="services"] #services,
+body.spa-mode[data-page="projects"] #projects,
+body.spa-mode[data-page="achievements"] #achievements,
+body.spa-mode[data-page="gallery"] #gallery,
+body.spa-mode[data-page="contact"] #contact{display:block!important;}
+body.spa-mode[data-page="services"] #what-we-do{display:block!important;}
+body.spa-mode[data-page="contact"] > footer{display:block!important;}
+
+body.spa-mode .survey-rail{display:none!important;}
+body.spa-mode .back-top{display:none!important;}
+body.spa-mode .lightbox{z-index:10000!important;}
+
+/* Mission + Vision become independent pages */
+body.spa-mode #spaMission,
+body.spa-mode #spaVision{display:none!important;}
+body.spa-mode #about .vm-grid{display:none!important;}
+body.spa-mode[data-page="mission"] #spaMission,
+body.spa-mode[data-page="vision"] #spaVision{
+  display:flex!important;
+}
+
+/* New cinematic navigation */
+.cinematic-nav{
+  position:fixed;
+  top:0;left:0;right:0;
+  z-index:9000;
+  height:76px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:0 22px;
+  background:linear-gradient(180deg,rgba(3,10,25,.94),rgba(3,10,25,.72),transparent);
+  backdrop-filter:blur(10px);
+  -webkit-backdrop-filter:blur(10px);
+}
+.cinematic-nav-inner{
+  width:min(1280px,100%);
+  display:flex;
+  align-items:center;
+  gap:24px;
+}
+.cinematic-brand{
+  color:#fff;
+  font-family:var(--font-display);
+  font-size:18px;
+  font-weight:800;
+  white-space:nowrap;
+  text-shadow:0 2px 14px rgba(0,0,0,.7);
+  cursor:pointer;
+}
+.cinematic-nav-links{
+  margin-left:auto;
+  display:flex;
+  align-items:center;
+  gap:4px;
+  flex-wrap:wrap;
+  justify-content:flex-end;
+}
+.cinematic-nav button{
+  position:relative;
+  border:0;
+  background:transparent;
+  color:rgba(255,255,255,.72);
+  padding:10px 11px;
+  font:700 11px var(--font-mono);
+  letter-spacing:.06em;
+  text-transform:uppercase;
+  cursor:pointer;
+  transition:color .35s ease,transform .35s ease;
+}
+.cinematic-nav button::after{
+  content:"";
+  position:absolute;
+  left:11px;right:11px;bottom:3px;
+  height:2px;
+  background:linear-gradient(90deg,#2456f6,#4fc3f7,#7b6ef6);
+  transform:scaleX(0);
+  transform-origin:left;
+  transition:transform .4s cubic-bezier(.22,.68,.16,1);
+  box-shadow:0 0 12px rgba(79,195,247,.7);
+}
+.cinematic-nav button:hover,
+.cinematic-nav button.active{color:#fff;transform:translateY(-1px);}
+.cinematic-nav button.active::after{transform:scaleX(1);}
+.cinematic-menu{
+  display:none;
+  margin-left:auto;
+  width:44px;height:44px;
+  border:1px solid rgba(255,255,255,.25);
+  border-radius:10px;
+  background:rgba(255,255,255,.08);
+  color:#fff;
+}
+.cinematic-mobile-panel{
+  display:none;
+  position:fixed;
+  top:76px;left:12px;right:12px;
+  z-index:8999;
+  padding:12px;
+  border:1px solid rgba(255,255,255,.14);
+  border-radius:16px;
+  background:rgba(4,13,30,.96);
+  backdrop-filter:blur(18px);
+  box-shadow:0 25px 80px rgba(0,0,0,.45);
+}
+.cinematic-mobile-panel.open{
+  display:grid;
+  animation:cinematicMenuIn .35s ease both;
+}
+.cinematic-mobile-panel button{
+  border:0;
+  background:transparent;
+  color:#dceaff;
+  text-align:left;
+  padding:14px 12px;
+  border-radius:10px;
+  font:700 12px var(--font-mono);
+}
+.cinematic-mobile-panel button:hover,
+.cinematic-mobile-panel button.active{background:rgba(79,195,247,.1);color:#fff;}
+
+/* Page transition */
+.cinematic-wipe{
+  position:fixed;
+  inset:0;
+  z-index:9500;
+  pointer-events:none;
+  opacity:0;
+  background:
+    linear-gradient(110deg,transparent 0%,rgba(79,195,247,.22) 48%,rgba(123,110,246,.22) 52%,transparent 100%),
+    linear-gradient(180deg,#06132c,#081b3b);
+  transform:translateX(-110%);
+}
+.cinematic-wipe.run{
+  animation:cinematicWipe .78s cubic-bezier(.76,0,.24,1) both;
+}
+@keyframes cinematicWipe{
+  0%{opacity:1;transform:translateX(-110%);}
+  42%{opacity:1;transform:translateX(0);}
+  58%{opacity:1;transform:translateX(0);}
+  100%{opacity:0;transform:translateX(110%);}
+}
+@keyframes cinematicMenuIn{
+  from{opacity:0;transform:translateY(-10px) scale(.98);}
+  to{opacity:1;transform:translateY(0) scale(1);}
+}
+
+/* Every opened page gets a cinematic entrance */
+body.spa-mode[data-page]:not([data-page="home"]) #about,
+body.spa-mode[data-page]:not([data-page="home"]) #services,
+body.spa-mode[data-page]:not([data-page="home"]) #projects,
+body.spa-mode[data-page]:not([data-page="home"]) #achievements,
+body.spa-mode[data-page]:not([data-page="home"]) #gallery,
+body.spa-mode[data-page]:not([data-page="home"]) #contact,
+body.spa-mode[data-page="mission"] #spaMission,
+body.spa-mode[data-page="vision"] #spaVision{
+  animation:pageCinematicIn .9s cubic-bezier(.2,.8,.2,1) both;
+}
+@keyframes pageCinematicIn{
+  from{opacity:0;transform:translateY(28px) scale(.985);filter:blur(7px);}
+  60%{opacity:1;filter:blur(0);}
+  to{opacity:1;transform:none;filter:none;}
+}
+
+/* Home opening cinematic */
+body.spa-mode[data-page="home"] #home .hero-media img{
+  animation:homeKenBurns 18s cubic-bezier(.2,.65,.2,1) both;
+}
+body.spa-mode[data-page="home"] #home .hero-company-name{
+  animation:homeTitleIn 1.2s cubic-bezier(.2,.8,.2,1) .25s both;
+}
+body.spa-mode[data-page="home"] #home .hero-bottom{
+  animation:homeContentIn 1.15s cubic-bezier(.2,.8,.2,1) .45s both;
+}
+body.spa-mode[data-page="home"] #home::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:30;
+  pointer-events:none;
+  background:linear-gradient(115deg,transparent 0%,rgba(255,255,255,.18) 48%,transparent 54%);
+  transform:translateX(-120%);
+  animation:homeLightSweep 1.8s cubic-bezier(.2,.8,.2,1) .1s both;
+}
+@keyframes homeKenBurns{
+  from{transform:scale(1.02);filter:brightness(.78) saturate(.9);}
+  to{transform:scale(1.10);filter:brightness(1) saturate(1.08);}
+}
+@keyframes homeTitleIn{
+  from{opacity:0;transform:translateY(-24px);filter:blur(8px);}
+  to{opacity:1;transform:none;filter:none;}
+}
+@keyframes homeContentIn{
+  from{opacity:0;transform:translateY(45px);filter:blur(8px);}
+  to{opacity:1;transform:none;filter:none;}
+}
+@keyframes homeLightSweep{
+  from{transform:translateX(-120%);}
+  to{transform:translateX(120%);}
+}
+
+/* Independent Mission/Vision pages */
+.spa-vision-page{
+  min-height:100vh;
+  align-items:center;
+  position:relative;
+  overflow:hidden;
+  padding:130px 28px 90px;
+  background:
+    radial-gradient(800px 600px at 15% 15%,rgba(79,195,247,.16),transparent 60%),
+    radial-gradient(700px 600px at 85% 85%,rgba(123,110,246,.15),transparent 60%),
+    linear-gradient(145deg,#06122b,#0e2a5f 55%,#07152f);
+  color:#fff;
+}
+.spa-vision-page::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:
+    repeating-linear-gradient(90deg,rgba(255,255,255,.035) 0 1px,transparent 1px 90px),
+    repeating-linear-gradient(0deg,rgba(255,255,255,.025) 0 1px,transparent 1px 90px);
+  mask-image:linear-gradient(to bottom,black,transparent);
+  pointer-events:none;
+}
+.spa-vision-page .container{
+  position:relative;
+  z-index:2;
+}
+.spa-vm-layout{
+  max-width:900px;
+  margin:auto;
+}
+.spa-vm-kicker{
+  font:700 12px var(--font-mono);
+  letter-spacing:.2em;
+  color:#4fc3f7;
+  text-transform:uppercase;
+  margin-bottom:20px;
+}
+.spa-vm-layout h2{
+  font-size:clamp(50px,8vw,100px);
+  line-height:.9;
+  color:#fff;
+  margin-bottom:28px;
+  letter-spacing:-.04em;
+}
+.spa-vm-layout p{
+  max-width:760px;
+  color:#d5e3fa;
+  font-size:clamp(17px,2vw,21px);
+  line-height:1.8;
+}
+.spa-vm-line{
+  width:100%;
+  height:1px;
+  margin:42px 0 28px;
+  background:linear-gradient(90deg,#4fc3f7,rgba(255,255,255,.05));
+}
+.spa-vm-meta{
+  display:flex;
+  gap:35px;
+  flex-wrap:wrap;
+  font:600 11px var(--font-mono);
+  color:#9eb5d6;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+}
+.spa-vm-meta strong{display:block;color:#fff;font-size:14px;margin-top:6px;}
+
+/* Hide the old Mission/Vision cards because they now have their own tabs */
+.spa-source-vm{display:none!important;}
+
+/* Tablet/mobile navigation */
+@media(max-width:1050px){
+  .cinematic-nav{height:68px;}
+  .cinematic-nav-links{display:none;}
+  .cinematic-menu{display:flex;align-items:center;justify-content:center;}
+  .cinematic-brand{font-size:16px;}
+}
+@media(max-width:700px){
+  .cinematic-nav{padding:0 15px;}
+  .cinematic-brand{
+    max-width:calc(100% - 60px);
+    white-space:normal;
+    line-height:1.05;
+    font-size:15px;
+  }
+  .cinematic-mobile-panel{top:68px;}
+  body.spa-mode > section,
+  body.spa-mode > footer{min-height:100svh;}
+  .spa-vision-page{padding:110px 20px 65px;}
+  .spa-vm-layout h2{font-size:clamp(50px,18vw,82px);}
+  .spa-vm-layout p{font-size:16px;line-height:1.7;}
+  .spa-vm-meta{gap:20px;}
+}
+
+/* Accessibility */
+@media(prefers-reduced-motion:reduce){
+  .cinematic-wipe,.cinematic-nav,.spa-vision-page,
+  body.spa-mode[data-page] #about,
+  body.spa-mode[data-page] #services,
+  body.spa-mode[data-page] #projects,
+  body.spa-mode[data-page] #achievements,
+  body.spa-mode[data-page] #gallery,
+  body.spa-mode[data-page] #contact{
+    animation:none!important;
+  }
+}
+</style>
+
+<!-- CINEMATIC TAB NAVIGATION -->
+<nav class="cinematic-nav" aria-label="Main navigation">
+  <div class="cinematic-nav-inner">
+    <div class="cinematic-brand" data-page="home">
+      Shree Himal Group Nirman Byawasaya Udhyog
+    </div>
+
+    <div class="cinematic-nav-links">
+      <button type="button" data-page="home">Home</button>
+      <button type="button" data-page="about">About</button>
+      <button type="button" data-page="services">Services</button>
+      <button type="button" data-page="projects">Projects</button>
+      <button type="button" data-page="mission">Mission</button>
+      <button type="button" data-page="vision">Vision</button>
+      <button type="button" data-page="achievements">Achievements</button>
+      <button type="button" data-page="gallery">Gallery</button>
+      <button type="button" data-page="contact">Contact</button>
+    </div>
+
+    <button class="cinematic-menu" id="cinematicMenu" type="button"
+      aria-label="Open navigation" aria-expanded="false">☰</button>
+  </div>
+</nav>
+
+<div class="cinematic-mobile-panel" id="cinematicMobilePanel">
+  <button type="button" data-page="home">Home</button>
+  <button type="button" data-page="about">About</button>
+  <button type="button" data-page="services">Services</button>
+  <button type="button" data-page="projects">Projects</button>
+  <button type="button" data-page="mission">Mission</button>
+  <button type="button" data-page="vision">Vision</button>
+  <button type="button" data-page="achievements">Achievements</button>
+  <button type="button" data-page="gallery">Gallery</button>
+  <button type="button" data-page="contact">Contact</button>
+</div>
+
+<div class="cinematic-wipe" id="cinematicWipe" aria-hidden="true"></div>
+
+<!-- INDEPENDENT MISSION PAGE -->
+<section id="spaMission" class="spa-vision-page">
+  <div class="container">
+    <div class="spa-vm-layout">
+      <div class="spa-vm-kicker">04 / Our Mission</div>
+      <h2>Mission</h2>
+      <p>
+        To provide reliable construction services, infrastructure support,
+        materials and equipment-related supplies while maintaining
+        professionalism, transparency, safety and customer satisfaction.
+      </p>
+      <div class="spa-vm-line"></div>
+      <div class="spa-vm-meta">
+        <div>Focus<strong>Reliable Service</strong></div>
+        <div>Standard<strong>Professionalism</strong></div>
+        <div>Priority<strong>Customer Satisfaction</strong></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- INDEPENDENT VISION PAGE -->
+<section id="spaVision" class="spa-vision-page">
+  <div class="container">
+    <div class="spa-vm-layout">
+      <div class="spa-vm-kicker">05 / Our Vision</div>
+      <h2>Vision</h2>
+      <p>
+        To contribute to dependable infrastructure development by building
+        long-term trust through quality work, responsible business practices
+        and practical construction support.
+      </p>
+      <div class="spa-vm-line"></div>
+      <div class="spa-vm-meta">
+        <div>Goal<strong>Long-Term Trust</strong></div>
+        <div>Approach<strong>Quality Work</strong></div>
+        <div>Impact<strong>Better Infrastructure</strong></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script id="cinematic-spa-controller">
+(function(){
+  "use strict";
+
+  document.body.classList.add("spa-mode");
+
+  var pages = [
+    "home","about","services","projects",
+    "mission","vision","achievements","gallery","contact"
+  ];
+
+  var wipe = document.getElementById("cinematicWipe");
+  var menu = document.getElementById("cinematicMenu");
+  var mobilePanel = document.getElementById("cinematicMobilePanel");
+  var navButtons = document.querySelectorAll(".cinematic-nav [data-page]");
+  var mobileButtons = document.querySelectorAll(".cinematic-mobile-panel [data-page]");
+
+  function validPage(page){
+    return pages.indexOf(page) !== -1 ? page : "home";
+  }
+
+  function updateButtons(page){
+    document.querySelectorAll(".cinematic-nav button[data-page], .cinematic-mobile-panel button[data-page]")
+      .forEach(function(btn){
+        btn.classList.toggle("active", btn.getAttribute("data-page") === page);
+      });
+  }
+
+  function closeMenu(){
+    mobilePanel.classList.remove("open");
+    menu.setAttribute("aria-expanded","false");
+  }
+
+  function resetReveal(page){
+    var root = document.getElementById(
+      page === "mission" ? "spaMission" :
+      page === "vision" ? "spaVision" : page
+    );
+    if(!root) return;
+
+    root.querySelectorAll(".reveal,.reveal-scale").forEach(function(el){
+      el.classList.remove("is-visible","active");
+    });
+
+    setTimeout(function(){
+      root.querySelectorAll(".reveal,.reveal-scale").forEach(function(el){
+        el.classList.add("is-visible","active");
+      });
+    },120);
+  }
+
+  function goToPage(page, animate){
+    page = validPage(page);
+    var current = document.body.getAttribute("data-page") || "home";
+
+    if(current === page){
+      closeMenu();
+      return;
+    }
+
+    if(animate){
+      wipe.classList.remove("run");
+      void wipe.offsetWidth;
+      wipe.classList.add("run");
+    }
+
+    document.body.setAttribute("data-page", page);
+    updateButtons(page);
+    closeMenu();
+
+    /* Always start the new page from the top. */
+    window.scrollTo({top:0,behavior:"auto"});
+
+    resetReveal(page);
+
+    /* Keep the URL shareable without forcing a traditional page reload. */
+    if(history.replaceState){
+      history.replaceState(null,"","#" + page);
+    }
+  }
+
+  function initialPage(){
+    var hash = (window.location.hash || "").replace("#","");
+    return validPage(hash || "home");
+  }
+
+  navButtons.forEach(function(btn){
+    btn.addEventListener("click",function(){
+      goToPage(btn.getAttribute("data-page"),true);
+    });
+  });
+
+  mobileButtons.forEach(function(btn){
+    btn.addEventListener("click",function(){
+      goToPage(btn.getAttribute("data-page"),true);
+    });
+  });
+
+  document.querySelector(".cinematic-brand").addEventListener("click",function(){
+    goToPage("home",true);
+  });
+
+  menu.addEventListener("click",function(){
+    var open = mobilePanel.classList.toggle("open");
+    menu.setAttribute("aria-expanded",open ? "true":"false");
+  });
+
+  /* Convert internal #links/buttons into cinematic page switches. */
+  document.addEventListener("click",function(e){
+    var link = e.target.closest("a[href^='#']");
+    if(!link) return;
+
+    var target = (link.getAttribute("href") || "").replace("#","");
+    if(pages.indexOf(target) === -1) return;
+
+    e.preventDefault();
+    goToPage(target,true);
+  });
+
+  /* Project tab buttons must continue to work normally. */
+  document.querySelectorAll(".proj-tab").forEach(function(tab){
+    tab.addEventListener("click",function(){
+      /* Existing project-tab handler handles the actual panel. */
+      setTimeout(function(){
+        document.querySelectorAll(".proj-panel").forEach(function(panel){
+          panel.style.animation = "none";
+          void panel.offsetWidth;
+          panel.style.animation = "";
+        });
+      },20);
+    });
+  });
+
+  /* When browser Back/Forward changes the hash, switch the tab. */
+  window.addEventListener("hashchange",function(){
+    var page = validPage((window.location.hash || "").replace("#",""));
+    if(document.body.getAttribute("data-page") !== page){
+      goToPage(page,true);
+    }
+  });
+
+  document.body.setAttribute("data-page",initialPage());
+  updateButtons(initialPage());
+
+  /* Initial home cinematic entrance. */
+  requestAnimationFrame(function(){
+    document.body.classList.add("spa-ready");
+    resetReveal(initialPage());
+  });
+
+})();
+</script>
+
 </body>
